@@ -1,0 +1,288 @@
+{
+  "blessed_at": "2026-09-06T11:49:41+00:00",
+  "blessed_commit": "068b832",
+  "components": {
+    "ACR-DATA.heavy.accuracy": {
+      "detail": "136.5 bp quiet error",
+      "v": 0.5449
+    },
+    "ACR-DATA.heavy.calibration": {
+      "detail": "Winkler 2927 bp, covers 2/12",
+      "v": 0.6342
+    },
+    "ACR-DATA.heavy.resistance": {
+      "detail": "30.3 bp under attack",
+      "v": 0.899
+    },
+    "ACR-DATA.heavy.separation": {
+      "detail": "183.4x vs naive",
+      "v": 1.0
+    },
+    "ACR-DATA.heavy.tail": {
+      "detail": "215.0 bp worst hour",
+      "v": 0.6416
+    },
+    "ACR-DATA.heldout_a.accuracy": {
+      "detail": "106.4 bp quiet error",
+      "v": 0.6453
+    },
+    "ACR-DATA.heldout_a.calibration": {
+      "detail": "Winkler 3149 bp, covers 1/12",
+      "v": 0.6064
+    },
+    "ACR-DATA.heldout_a.resistance": {
+      "detail": "113.7 bp under attack",
+      "v": 0.6208
+    },
+    "ACR-DATA.heldout_a.separation": {
+      "detail": "51.1x vs naive",
+      "v": 0.5828
+    },
+    "ACR-DATA.heldout_a.tail": {
+      "detail": "203.4 bp worst hour",
+      "v": 0.6611
+    },
+    "ACR-DATA.heldout_b.accuracy": {
+      "detail": "73.9 bp quiet error",
+      "v": 0.7537
+    },
+    "ACR-DATA.heldout_b.calibration": {
+      "detail": "Winkler 3451 bp, covers 3/12",
+      "v": 0.5686
+    },
+    "ACR-DATA.heldout_b.resistance": {
+      "detail": "138.9 bp under attack",
+      "v": 0.537
+    },
+    "ACR-DATA.heldout_b.separation": {
+      "detail": "26.9x vs naive",
+      "v": 0.1843
+    },
+    "ACR-DATA.heldout_b.tail": {
+      "detail": "244.6 bp worst hour",
+      "v": 0.5924
+    },
+    "ACR-DATA.published.accuracy": {
+      "detail": "78.1 bp quiet error",
+      "v": 0.7397
+    },
+    "ACR-DATA.published.calibration": {
+      "detail": "Winkler 2722 bp, covers 3/12",
+      "v": 0.6598
+    },
+    "ACR-DATA.published.resistance": {
+      "detail": "106.1 bp under attack",
+      "v": 0.6463
+    },
+    "ACR-DATA.published.separation": {
+      "detail": "48.7x vs naive",
+      "v": 0.5534
+    },
+    "ACR-DATA.published.tail": {
+      "detail": "207.2 bp worst hour",
+      "v": 0.6546
+    },
+    "ACR-DATA.quiet.accuracy": {
+      "detail": "147.9 bp quiet error",
+      "v": 0.507
+    },
+    "ACR-DATA.quiet.calibration": {
+      "detail": "Winkler 5241 bp, covers 1/6",
+      "v": 0.3448
+    },
+    "ACR-DATA.quiet.tail": {
+      "detail": "349.4 bp worst hour",
+      "v": 0.4176
+    },
+    "ACR-GPU.heavy.accuracy": {
+      "detail": "132.9 bp quiet error",
+      "v": 0.5569
+    },
+    "ACR-GPU.heavy.calibration": {
+      "detail": "Winkler 5030 bp, covers 2/12",
+      "v": 0.3713
+    },
+    "ACR-GPU.heavy.resistance": {
+      "detail": "223.7 bp under attack",
+      "v": 0.2545
+    },
+    "ACR-GPU.heavy.separation": {
+      "detail": "26.4x vs naive",
+      "v": 0.1724
+    },
+    "ACR-GPU.heavy.tail": {
+      "detail": "304.2 bp worst hour",
+      "v": 0.493
+    },
+    "ACR-GPU.heldout_a.accuracy": {
+      "detail": "85.4 bp quiet error",
+      "v": 0.7152
+    },
+    "ACR-GPU.heldout_a.calibration": {
+      "detail": "Winkler 2739 bp, covers 3/12",
+      "v": 0.6576
+    },
+    "ACR-GPU.heldout_a.resistance": {
+      "detail": "119.4 bp under attack",
+      "v": 0.6019
+    },
+    "ACR-GPU.heldout_a.separation": {
+      "detail": "45.7x vs naive",
+      "v": 0.5131
+    },
+    "ACR-GPU.heldout_a.tail": {
+      "detail": "278.6 bp worst hour",
+      "v": 0.5357
+    },
+    "ACR-GPU.heldout_b.accuracy": {
+      "detail": "71.9 bp quiet error",
+      "v": 0.7604
+    },
+    "ACR-GPU.heldout_b.calibration": {
+      "detail": "Winkler 2985 bp, covers 5/12",
+      "v": 0.6268
+    },
+    "ACR-GPU.heldout_b.resistance": {
+      "detail": "109.2 bp under attack",
+      "v": 0.636
+    },
+    "ACR-GPU.heldout_b.separation": {
+      "detail": "44.0x vs naive",
+      "v": 0.4894
+    },
+    "ACR-GPU.heldout_b.tail": {
+      "detail": "539.6 bp worst hour",
+      "v": 0.1007
+    },
+    "ACR-GPU.published.accuracy": {
+      "detail": "92.5 bp quiet error",
+      "v": 0.6918
+    },
+    "ACR-GPU.published.calibration": {
+      "detail": "Winkler 2505 bp, covers 3/12",
+      "v": 0.6869
+    },
+    "ACR-GPU.published.resistance": {
+      "detail": "63.2 bp under attack",
+      "v": 0.7894
+    },
+    "ACR-GPU.published.separation": {
+      "detail": "87.5x vs naive",
+      "v": 0.9168
+    },
+    "ACR-GPU.published.tail": {
+      "detail": "185.6 bp worst hour",
+      "v": 0.6907
+    },
+    "ACR-GPU.quiet.accuracy": {
+      "detail": "118.8 bp quiet error",
+      "v": 0.6039
+    },
+    "ACR-GPU.quiet.calibration": {
+      "detail": "Winkler 3555 bp, covers 0/6",
+      "v": 0.5556
+    },
+    "ACR-GPU.quiet.tail": {
+      "detail": "286.8 bp worst hour",
+      "v": 0.5219
+    },
+    "ACR-INF.heavy.accuracy": {
+      "detail": "133.7 bp quiet error",
+      "v": 0.5543
+    },
+    "ACR-INF.heavy.calibration": {
+      "detail": "Winkler 3514 bp, covers 2/12",
+      "v": 0.5607
+    },
+    "ACR-INF.heavy.resistance": {
+      "detail": "130.5 bp under attack",
+      "v": 0.5652
+    },
+    "ACR-INF.heavy.separation": {
+      "detail": "47.1x vs naive",
+      "v": 0.5318
+    },
+    "ACR-INF.heavy.tail": {
+      "detail": "236.2 bp worst hour",
+      "v": 0.6064
+    },
+    "ACR-INF.heldout_a.accuracy": {
+      "detail": "152.4 bp quiet error",
+      "v": 0.4921
+    },
+    "ACR-INF.heldout_a.calibration": {
+      "detail": "Winkler 5717 bp, covers 0/12",
+      "v": 0.2854
+    },
+    "ACR-INF.heldout_a.resistance": {
+      "detail": "218.3 bp under attack",
+      "v": 0.2724
+    },
+    "ACR-INF.heldout_a.separation": {
+      "detail": "24.4x vs naive",
+      "v": 0.1237
+    },
+    "ACR-INF.heldout_a.tail": {
+      "detail": "396.1 bp worst hour",
+      "v": 0.3398
+    },
+    "ACR-INF.heldout_b.accuracy": {
+      "detail": "171.8 bp quiet error",
+      "v": 0.4275
+    },
+    "ACR-INF.heldout_b.calibration": {
+      "detail": "Winkler 5121 bp, covers 1/12",
+      "v": 0.3598
+    },
+    "ACR-INF.heldout_b.resistance": {
+      "detail": "163.7 bp under attack",
+      "v": 0.4543
+    },
+    "ACR-INF.heldout_b.separation": {
+      "detail": "24.1x vs naive",
+      "v": 0.116
+    },
+    "ACR-INF.heldout_b.tail": {
+      "detail": "297.7 bp worst hour",
+      "v": 0.5038
+    },
+    "ACR-INF.published.accuracy": {
+      "detail": "73.3 bp quiet error",
+      "v": 0.7556
+    },
+    "ACR-INF.published.calibration": {
+      "detail": "Winkler 2754 bp, covers 2/12",
+      "v": 0.6558
+    },
+    "ACR-INF.published.resistance": {
+      "detail": "124.1 bp under attack",
+      "v": 0.5863
+    },
+    "ACR-INF.published.separation": {
+      "detail": "46.0x vs naive",
+      "v": 0.517
+    },
+    "ACR-INF.published.tail": {
+      "detail": "221.8 bp worst hour",
+      "v": 0.6303
+    },
+    "ACR-INF.quiet.accuracy": {
+      "detail": "47.9 bp quiet error",
+      "v": 0.8402
+    },
+    "ACR-INF.quiet.calibration": {
+      "detail": "Winkler 1214 bp, covers 1/6",
+      "v": 0.8482
+    },
+    "ACR-INF.quiet.tail": {
+      "detail": "105.5 bp worst hour",
+      "v": 0.8242
+    }
+  },
+  "note": "First baseline, on 589a44c+. Engine deterministic (ddd51be), eval set frozen on five scenarios per index including three held-out seeds, calibration measured for the first time. Coverage is 8/36 against a nominal 95% and calibration is the argmin on every index \u2014 that is the hill this exists to climb.",
+  "schema": "acr.rate/1",
+  "score": {
+    "argmin": "ACR-GPU.heldout_b.tail",
+    "v": 0.1007
+  }
+}

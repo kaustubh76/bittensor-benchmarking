@@ -1,0 +1,35 @@
+{
+  "captured_at": "2026-10-29T09:56:29Z",
+  "coldkeys": {
+    "51": {
+      "n_coldkeys": 247,
+      "n_hotkeys": 256
+    },
+    "64": {
+      "n_coldkeys": 207,
+      "n_hotkeys": 256
+    }
+  },
+  "pools": {
+    "51": {
+      "alpha_in_pool": 135914403.0,
+      "alpha_rewards": 1000000000.0,
+      "block_number": 9388496,
+      "tao_in_pool": 16779644.0,
+      "timestamp": "2026-10-29T09:19:00Z"
+    },
+    "64": {
+      "alpha_in_pool": 130471567.0,
+      "alpha_rewards": 1000000000.0,
+      "block_number": 9388483,
+      "tao_in_pool": 8782111.0,
+      "timestamp": "2026-10-29T09:16:24Z"
+    }
+  },
+  "registration": {
+    "block_number": 9388680,
+    "rao": 259043206400,
+    "timestamp": "2026-10-29T09:55:48Z"
+  },
+  "tao_price_usd": 248.566574973272
+}

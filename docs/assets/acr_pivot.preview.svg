@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1485" viewBox="0 0 2000 1485" font-family="Helvetica,Arial,sans-serif">
+<rect width="2000" height="1485" fill="#ffffff"/>
+<defs><marker id="a" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#333"/></marker></defs>
+<rect x="40" y="88" width="1920" height="160" rx="4" fill="transparent" stroke="#495057" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="70" y="140" width="300" height="70" rx="4" fill="transparent" stroke="#495057" stroke-width="2"/>
+<rect x="420" y="140" width="300" height="70" rx="4" fill="transparent" stroke="#495057" stroke-width="2"/>
+<rect x="770" y="140" width="300" height="70" rx="4" fill="transparent" stroke="#495057" stroke-width="2"/>
+<rect x="1120" y="140" width="300" height="70" rx="4" fill="transparent" stroke="#495057" stroke-width="2"/>
+<rect x="40" y="290" width="430" height="450" rx="4" fill="transparent" stroke="#0c8599" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="70" y="342" width="370" height="76" rx="4" fill="transparent" stroke="#0c8599" stroke-width="2"/>
+<rect x="70" y="440" width="370" height="150" rx="4" fill="transparent" stroke="#0c8599" stroke-width="2"/>
+<rect x="70" y="612" width="370" height="106" rx="4" fill="transparent" stroke="#0c8599" stroke-width="2"/>
+<rect x="520" y="290" width="900" height="900" rx="4" fill="transparent" stroke="#1971c2" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="560" y="360" width="380" height="56" rx="4" fill="transparent" stroke="#1971c2" stroke-width="2"/>
+<rect x="560" y="424" width="380" height="56" rx="4" fill="transparent" stroke="#1971c2" stroke-width="2"/>
+<rect x="560" y="488" width="380" height="56" rx="4" fill="transparent" stroke="#1971c2" stroke-width="2"/>
+<rect x="560" y="552" width="380" height="56" rx="4" fill="transparent" stroke="#1971c2" stroke-width="2"/>
+<rect x="560" y="616" width="380" height="56" rx="4" fill="transparent" stroke="#1971c2" stroke-width="2"/>
+<rect x="560" y="680" width="380" height="56" rx="4" fill="transparent" stroke="#1971c2" stroke-width="2"/>
+<rect x="560" y="744" width="380" height="56" rx="4" fill="transparent" stroke="#1971c2" stroke-width="2"/>
+<rect x="560" y="808" width="380" height="56" rx="4" fill="transparent" stroke="#1971c2" stroke-width="2"/>
+<rect x="560" y="905" width="820" height="80" rx="4" fill="transparent" stroke="#f08c00" stroke-width="2"/>
+<rect x="560" y="995" width="820" height="80" rx="4" fill="transparent" stroke="#f08c00" stroke-width="2"/>
+<rect x="560" y="1085" width="820" height="80" rx="4" fill="transparent" stroke="#f08c00" stroke-width="2"/>
+<rect x="40" y="780" width="430" height="410" rx="4" fill="transparent" stroke="#f08c00" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="70" y="832" width="370" height="150" rx="4" fill="transparent" stroke="#f08c00" stroke-width="2"/>
+<rect x="70" y="1002" width="370" height="165" rx="4" fill="transparent" stroke="#f08c00" stroke-width="2"/>
+<rect x="1470" y="290" width="490" height="900" rx="4" fill="transparent" stroke="#2f9e44" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="1500" y="360" width="240" height="56" rx="4" fill="transparent" stroke="#e03131" stroke-width="2"/>
+<rect x="1500" y="552" width="240" height="56" rx="4" fill="transparent" stroke="#f08c00" stroke-width="2"/>
+<rect x="1500" y="680" width="240" height="56" rx="4" fill="transparent" stroke="#2f9e44" stroke-width="2"/>
+<rect x="1500" y="808" width="240" height="56" rx="4" fill="transparent" stroke="#2f9e44" stroke-width="2"/>
+<rect x="1500" y="896" width="430" height="104" rx="4" fill="transparent" stroke="#9c36b5" stroke-width="2"/>
+<rect x="1500" y="1022" width="430" height="166" rx="4" fill="transparent" stroke="#9c36b5" stroke-width="2"/>
+<rect x="40" y="1230" width="1920" height="112" rx="4" fill="transparent" stroke="#2f9e44" stroke-width="2"/>
+<polyline points="370,175.0 395.0,175.0 420,175.0" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="720,175.0 745.0,175.0 770,175.0" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="1070,175.0 1095.0,175.0 1120,175.0" fill="none" stroke="#495057" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="255.0,418 255.0,429.0 255.0,440" fill="none" stroke="#0c8599" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="750.0,416 750.0,420.0 750.0,424" fill="none" stroke="#1971c2" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="750.0,480 750.0,484.0 750.0,488" fill="none" stroke="#1971c2" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="750.0,544 750.0,548.0 750.0,552" fill="none" stroke="#1971c2" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="750.0,608 750.0,612.0 750.0,616" fill="none" stroke="#1971c2" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="750.0,672 750.0,676.0 750.0,680" fill="none" stroke="#1971c2" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="750.0,736 750.0,740.0 750.0,744" fill="none" stroke="#1971c2" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="750.0,800 750.0,804.0 750.0,808" fill="none" stroke="#1971c2" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="255.0,1002 255.0,992.0 255.0,982" fill="none" stroke="#f08c00" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="440,907.0 495,907.0 495,708.0 560,708.0" fill="none" stroke="#f08c00" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="440,665.0 495,665.0 495,388.0 560,388.0" fill="none" stroke="#0c8599" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="440,515.0 510,515.0 510,836.0 560,836.0" fill="none" stroke="#0c8599" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="940,388.0 1220.0,388.0 1500,388.0" fill="none" stroke="#e03131" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="940,580.0 1220.0,580.0 1500,580.0" fill="none" stroke="#f08c00" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="940,708.0 1220.0,708.0 1500,708.0" fill="none" stroke="#2f9e44" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="940,836.0 1220.0,836.0 1500,836.0" fill="none" stroke="#2f9e44" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="1740,580.0 1715.0,580.0 1715.0,896.0" fill="none" stroke="#9c36b5" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="1715.0,1000 1715.0,1011.0 1715.0,1022" fill="none" stroke="#9c36b5" stroke-width="2" marker-end="url(#a)"/>
+<text x="40" y="59.8" font-size="22" fill="#1e1e1e">ACR — the pivot: the index becomes a feature, the money path becomes the product</text>
+<text x="58" y="113.5" font-size="15" fill="#495057">TODAY — the index is the product</text>
+<text x="83" y="163.5" font-size="15" fill="#495057">simulated tape</text>
+<text x="83" y="186.2" font-size="13" fill="#1e1e1e">calibrated sim, not demand</text>
+<text x="433" y="163.5" font-size="15" fill="#495057">index</text>
+<text x="433" y="186.2" font-size="13" fill="#1e1e1e">ACR-INF · GPU · DATA</text>
+<text x="783" y="163.5" font-size="15" fill="#495057">hourly print</text>
+<text x="783" y="186.2" font-size="13" fill="#1e1e1e">on Arc mainnet, chain 5042</text>
+<text x="1133" y="163.5" font-size="15" fill="#495057">futures venue</text>
+<text x="1133" y="186.2" font-size="13" fill="#1e1e1e">cash-settles vs the print</text>
+<text x="1470" y="155.7" font-size="13" fill="#e03131">reference levels 20x–1159x off market</text>
+<text x="1470" y="168.7" font-size="13" fill="#e03131">(anchors/GAP.md, deliberately frozen)</text>
+<text x="1470" y="181.7" font-size="13" fill="#e03131">tape = sim · every payer is ours · moved 0</text>
+<text x="58" y="315.5" font-size="15" fill="#0c8599">WHAT COMES IN</text>
+<text x="83" y="365.5" font-size="15" fill="#0c8599">a business's USDC</text>
+<text x="83" y="388.2" font-size="13" fill="#1e1e1e">held in a contract, not by us</text>
+<text x="83" y="463.5" font-size="15" fill="#0c8599">PolicyWallet</text>
+<text x="83" y="486.2" font-size="13" fill="#1e1e1e">per-category caps · per-tx limit</text>
+<text x="83" y="499.2" font-size="13" fill="#1e1e1e">refuses rather than clamps</text>
+<text x="83" y="512.2" font-size="13" fill="#1e1e1e">enforced in the contract,</text>
+<text x="83" y="525.2" font-size="13" fill="#1e1e1e">not in the prompt</text>
+<text x="83" y="635.5" font-size="15" fill="#0c8599">obligations</text>
+<text x="83" y="658.2" font-size="13" fill="#1e1e1e">what the paywall actually settled, or</text>
+<text x="83" y="671.2" font-size="13" fill="#1e1e1e">--entitlements: an invoice + an</text>
+<text x="83" y="684.2" font-size="13" fill="#1e1e1e">independent count. "a usage export,</text>
+<text x="83" y="697.2" font-size="13" fill="#1e1e1e">and no keys."</text>
+<text x="538" y="315.5" font-size="15" fill="#1971c2">THE DECISION — eight refusals, in firing order</text>
+<text x="573" y="382.6" font-size="14" fill="#1971c2">1 · duplicate</text>
+<text x="573" y="403.8" font-size="12" fill="#1e1e1e">paid once already → refuse, permanently</text>
+<text x="573" y="446.6" font-size="14" fill="#1971c2">2 · payable</text>
+<text x="573" y="467.8" font-size="12" fill="#1e1e1e">no payee, or a burn address → refuse</text>
+<text x="573" y="510.6" font-size="14" fill="#1971c2">3 · meter</text>
+<text x="573" y="531.8" font-size="12" fill="#1e1e1e">billed above what we counted → escalate</text>
+<text x="573" y="574.6" font-size="14" fill="#1971c2">4 · counterparty</text>
+<text x="573" y="595.8" font-size="12" fill="#1e1e1e">sanctions hit → escalate, never pay</text>
+<text x="573" y="638.6" font-size="14" fill="#1971c2">5 · benchmarked</text>
+<text x="573" y="659.8" font-size="12" fill="#1e1e1e">fewer than 2 sellers → unbenchmarked, not wrong</text>
+<text x="573" y="702.6" font-size="14" fill="#1971c2">6 · price</text>
+<text x="573" y="723.8" font-size="12" fill="#1e1e1e">materially above the cheapest offer → reroute</text>
+<text x="573" y="766.6" font-size="14" fill="#1971c2">7 · timing</text>
+<text x="573" y="787.8" font-size="12" fill="#1e1e1e">due now, or worth holding for the discount</text>
+<text x="573" y="830.6" font-size="14" fill="#1971c2">8 · budget &amp; liquidity</text>
+<text x="573" y="851.8" font-size="12" fill="#1e1e1e">over the limit → the owner's call, not ours</text>
+<text x="573" y="927.6" font-size="14" fill="#f08c00">why an independent meter at all</text>
+<text x="573" y="948.8" font-size="12" fill="#1e1e1e">A seller who supplies both the goods and the measuring cup will</text>
+<text x="573" y="960.8" font-size="12" fill="#1e1e1e">eventually supply a smaller cup. Live: billed 6.4, we metered 3.8.</text>
+<text x="573" y="1017.6" font-size="14" fill="#f08c00">a screen that cannot answer is never "clear"</text>
+<text x="573" y="1038.8" font-size="12" fill="#1e1e1e">Three states, and the middle one is the point: `unknown` is not</text>
+<text x="573" y="1050.8" font-size="12" fill="#1e1e1e">`clear`, because a timeout must not read as a clean bill of health.</text>
+<text x="573" y="1107.6" font-size="14" fill="#f08c00">budget is permission · liquidity is money</text>
+<text x="573" y="1128.8" font-size="12" fill="#1e1e1e">`cap - spent` reads healthy on a wallet holding nothing, and the</text>
+<text x="573" y="1140.8" font-size="12" fill="#1e1e1e">payment then reverts on chain. Both are needed; neither substitutes.</text>
+<text x="58" y="805.5" font-size="15" fill="#f08c00">THE BENCHMARK — one gate of eight</text>
+<text x="83" y="855.5" font-size="15" fill="#f08c00">PAR — observed quotes</text>
+<text x="83" y="878.2" font-size="13" fill="#1e1e1e">prices somebody really offered,</text>
+<text x="83" y="891.2" font-size="13" fill="#1e1e1e">at the same unit</text>
+<text x="83" y="904.2" font-size="13" fill="#1e1e1e">MIN_SELLERS = 2 · one offer is</text>
+<text x="83" y="917.2" font-size="13" fill="#1e1e1e">not a market</text>
+<text x="83" y="930.2" font-size="13" fill="#1e1e1e">basis points only, never dollars</text>
+<text x="83" y="1025.5" font-size="15" fill="#f08c00">three quote populations</text>
+<text x="83" y="1048.2" font-size="13" fill="#1e1e1e">the fleet's own prices (first-party,</text>
+<text x="83" y="1061.2" font-size="13" fill="#1e1e1e">never medianed with the market)</text>
+<text x="83" y="1074.2" font-size="13" fill="#1e1e1e">anchors/ baskets (a URL per row)</text>
+<text x="83" y="1087.2" font-size="13" fill="#1e1e1e">x402 Discovery — 2,818 listings,</text>
+<text x="83" y="1100.2" font-size="13" fill="#1e1e1e">7 sellers on Arc  [not built]</text>
+<text x="1488" y="315.5" font-size="15" fill="#2f9e44">WHAT COMES OUT</text>
+<text x="1513" y="382.6" font-size="14" fill="#e03131">refuse</text>
+<text x="1513" y="403.8" font-size="12" fill="#1e1e1e">and say why</text>
+<text x="1513" y="574.6" font-size="14" fill="#f08c00">escalate</text>
+<text x="1513" y="595.8" font-size="12" fill="#1e1e1e">not its call</text>
+<text x="1513" y="702.6" font-size="14" fill="#2f9e44">reroute</text>
+<text x="1513" y="723.8" font-size="12" fill="#1e1e1e">a cheaper seller</text>
+<text x="1513" y="830.6" font-size="14" fill="#2f9e44">pay</text>
+<text x="1513" y="851.8" font-size="12" fill="#1e1e1e">clears all eight</text>
+<text x="1513" y="919.5" font-size="15" fill="#9c36b5">the owner's own wallet</text>
+<text x="1513" y="941.3" font-size="12" fill="#1e1e1e">spendAsOwner, gated on msg.sender == owner</text>
+<text x="1513" y="953.3" font-size="12" fill="#1e1e1e">not a signature the agent relays,</text>
+<text x="1513" y="965.3" font-size="12" fill="#1e1e1e">and not a flag in a database</text>
+<text x="1513" y="1045.5" font-size="15" fill="#9c36b5">the ledger</text>
+<text x="1513" y="1067.3" font-size="12" fill="#1e1e1e">double-entry beancount, every transaction</text>
+<text x="1513" y="1079.3" font-size="12" fill="#1e1e1e">summing to zero — each annotated with the</text>
+<text x="1513" y="1091.3" font-size="12" fill="#1e1e1e">rule that fired, what we metered, the par,</text>
+<text x="1513" y="1103.3" font-size="12" fill="#1e1e1e">the screen, and the hash the chain holds</text>
+<text x="1513" y="1115.3" font-size="12" fill="#1e1e1e">a reroute moved no money, so it is a note</text>
+<text x="1513" y="1127.3" font-size="12" fill="#1e1e1e">and never a transaction</text>
+<text x="53" y="1253.5" font-size="15" fill="#2f9e44">WHAT THE BRIEF MEASURES — and where it stands</text>
+<text x="53" y="1276.2" font-size="13" fill="#1e1e1e">businesses operated: 1 real, 1 labelled demonstration     ·     USDC received and paid out: never netted, never summed across chains     ·     paid out = 0</text>
+<text x="53" y="1289.2" font-size="13" fill="#1e1e1e">obligations settled on time without a human touching them: 0     ·     decisions made vs escalated, and how often the human agreed: no approval has ever run</text>
+<text x="40" y="1377.7" font-size="13" fill="#1e1e1e">LIVE TODAY  ·  the eight refusals, the independent meter, the screen, PAR from the fleet and from anchors/, the ledger, the replayable record.</text>
+<text x="40" y="1401.7" font-size="13" fill="#e03131">NOT YET  ·  PolicyWallet is deployed nowhere, so moved_usdc is 0 and no obligation has been settled without a human. Discovery is unbuilt. The loop runs on Arc testnet.</text>
+<text x="40" y="1439.5" font-size="15" fill="#1e1e1e">The test of whether this is a pivot and not a rebrand: after it, the published index values can be deleted and the product loses nothing.</text>
+</svg>

@@ -1,0 +1,235 @@
+{
+  "aggregate": {
+    "max": 0.0024722222222222224,
+    "min": 0.00033055555555555556,
+    "n": 10,
+    "n_requested": 10,
+    "p25": 0.0005527777777777778,
+    "p75": 0.0016944444444444444,
+    "spread_ratio": 7.478991596638656,
+    "value": 0.0011027777777777778
+  },
+  "basket_version": 2,
+  "ceiling": {
+    "note": "measured value plus 15%",
+    "ratio": 11.5,
+    "set_at": "2026-10-29"
+  },
+  "fetched_at": "2026-10-29T10:55:51+00:00",
+  "gap": {
+    "direction": "reference_above_market",
+    "ratio": 9.974811083123425
+  },
+  "index_id": "ACR-GPU",
+  "missing": [],
+  "provenance": {
+    "lium_response_sha256": "0x3179060460af0eff03596d2e16c1930bf0815b79c46c2b6e31533244f0784335",
+    "n_accelerator_classes_priced": 6,
+    "n_excluded_other_accelerator": 63,
+    "n_excluded_unpriced": 0,
+    "n_excluded_wrong_tier": 42,
+    "n_executors": 133
+  },
+  "reference_level": 0.011,
+  "rows": [
+    {
+      "id": "runpod/h100-pcie",
+      "label": "RunPod H100 PCIe (community)",
+      "price_usd_per_unit": 0.0005527777777777778,
+      "quality": {},
+      "raw": {
+        "usd_per_gpu_hour": 1.99
+      },
+      "source": {
+        "kind": "curated",
+        "quoted": "H100 PCIe $1.99/hr",
+        "retrieved_at": "2026-10-29T10:55:51+00:00",
+        "url": "https://www.runpod.io/pricing"
+      }
+    },
+    {
+      "id": "lambda/h100-sxm",
+      "label": "Lambda H100 SXM on-demand",
+      "price_usd_per_unit": 0.0011083333333333333,
+      "quality": {},
+      "raw": {
+        "usd_per_gpu_hour": 3.99
+      },
+      "source": {
+        "kind": "curated",
+        "quoted": "H100 SXM $3.99/GPU-hour",
+        "retrieved_at": "2026-10-29T10:55:51+00:00",
+        "url": "https://lambda.ai/service/gpu-cloud"
+      }
+    },
+    {
+      "id": "runpod/a100-pcie",
+      "label": "RunPod A100 PCIe",
+      "price_usd_per_unit": 0.00033055555555555556,
+      "quality": {},
+      "raw": {
+        "usd_per_gpu_hour": 1.19
+      },
+      "source": {
+        "kind": "curated",
+        "quoted": "A100 PCIe $1.19/hr",
+        "retrieved_at": "2026-10-29T10:55:51+00:00",
+        "url": "https://www.runpod.io/pricing"
+      }
+    },
+    {
+      "id": "lambda/a100-40gb",
+      "label": "Lambda A100 40GB on-demand",
+      "price_usd_per_unit": 0.0005527777777777778,
+      "quality": {},
+      "raw": {
+        "usd_per_gpu_hour": 1.99
+      },
+      "source": {
+        "kind": "curated",
+        "quoted": "A100 40GB $1.99/hr",
+        "retrieved_at": "2026-10-29T10:55:51+00:00",
+        "url": "https://lambda.ai/service/gpu-cloud"
+      }
+    },
+    {
+      "id": "lium/h100-80gb-hbm3",
+      "label": "Lium H100 80GB HBM3 (Bittensor SN51)",
+      "price_usd_per_unit": 0.0008333333333333334,
+      "quality": {
+        "machine_name": "NVIDIA H100 80GB HBM3"
+      },
+      "raw": {
+        "max_usd_per_gpu_hour": 3.0,
+        "min_usd_per_gpu_hour": 1.7945,
+        "n_executors": 6,
+        "usd_per_gpu_hour": 3.0
+      },
+      "source": {
+        "json_path": "[machine_name=NVIDIA H100 80GB HBM3].price_per_gpu (median)",
+        "kind": "http",
+        "retrieved_at": "2026-10-29T10:55:51+00:00",
+        "url": "https://lium.io/api/executors"
+      }
+    },
+    {
+      "id": "lium/h200",
+      "label": "Lium H200 (Bittensor SN51)",
+      "price_usd_per_unit": 0.0010972222222222223,
+      "quality": {
+        "machine_name": "NVIDIA H200"
+      },
+      "raw": {
+        "max_usd_per_gpu_hour": 4.96,
+        "min_usd_per_gpu_hour": 3.5,
+        "n_executors": 8,
+        "usd_per_gpu_hour": 3.95
+      },
+      "source": {
+        "json_path": "[machine_name=NVIDIA H200].price_per_gpu (median)",
+        "kind": "http",
+        "retrieved_at": "2026-10-29T10:55:51+00:00",
+        "url": "https://lium.io/api/executors"
+      }
+    },
+    {
+      "id": "lium/h200-nvl",
+      "label": "Lium H200 NVL (Bittensor SN51)",
+      "price_usd_per_unit": 0.0011111111111111111,
+      "quality": {
+        "machine_name": "NVIDIA H200 NVL"
+      },
+      "raw": {
+        "max_usd_per_gpu_hour": 4.0,
+        "min_usd_per_gpu_hour": 4.0,
+        "n_executors": 1,
+        "usd_per_gpu_hour": 4.0
+      },
+      "source": {
+        "json_path": "[machine_name=NVIDIA H200 NVL].price_per_gpu (median)",
+        "kind": "http",
+        "retrieved_at": "2026-10-29T10:55:51+00:00",
+        "url": "https://lium.io/api/executors"
+      }
+    },
+    {
+      "id": "lium/b200",
+      "label": "Lium B200 (Bittensor SN51)",
+      "price_usd_per_unit": 0.0016944444444444444,
+      "quality": {
+        "machine_name": "NVIDIA B200"
+      },
+      "raw": {
+        "max_usd_per_gpu_hour": 6.1,
+        "min_usd_per_gpu_hour": 5.95,
+        "n_executors": 7,
+        "usd_per_gpu_hour": 6.1
+      },
+      "source": {
+        "json_path": "[machine_name=NVIDIA B200].price_per_gpu (median)",
+        "kind": "http",
+        "retrieved_at": "2026-10-29T10:55:51+00:00",
+        "url": "https://lium.io/api/executors"
+      }
+    },
+    {
+      "id": "lium/b300-sxm6-pc",
+      "label": "Lium B300 SXM6 PC (Bittensor SN51)",
+      "price_usd_per_unit": 0.0024722222222222224,
+      "quality": {
+        "machine_name": "NVIDIA B300 SXM6 PC"
+      },
+      "raw": {
+        "max_usd_per_gpu_hour": 8.9,
+        "min_usd_per_gpu_hour": 8.9,
+        "n_executors": 2,
+        "usd_per_gpu_hour": 8.9
+      },
+      "source": {
+        "json_path": "[machine_name=NVIDIA B300 SXM6 PC].price_per_gpu (median)",
+        "kind": "http",
+        "retrieved_at": "2026-10-29T10:55:51+00:00",
+        "url": "https://lium.io/api/executors"
+      }
+    },
+    {
+      "id": "lium/b300-sxm6-ac",
+      "label": "Lium B300 SXM6 AC (Bittensor SN51)",
+      "price_usd_per_unit": 0.0023333333333333335,
+      "quality": {
+        "machine_name": "NVIDIA B300 SXM6 AC"
+      },
+      "raw": {
+        "max_usd_per_gpu_hour": 9.25,
+        "min_usd_per_gpu_hour": 8.0,
+        "n_executors": 4,
+        "usd_per_gpu_hour": 8.4
+      },
+      "source": {
+        "json_path": "[machine_name=NVIDIA B300 SXM6 AC].price_per_gpu (median)",
+        "kind": "http",
+        "retrieved_at": "2026-10-29T10:55:51+00:00",
+        "url": "https://lium.io/api/executors"
+      }
+    }
+  ],
+  "schema": "acr.anchor/1",
+  "selection": {
+    "aggregate": "median",
+    "lium_accelerators": [
+      "H100",
+      "H200",
+      "B200",
+      "B300"
+    ],
+    "lium_note": "`lium_tier` is the on-demand product; `lium_accelerators` is the substring set that defines 'comparable tier'. Both are declared here rather than hard-coded in scripts/anchors.py so a reader can see what was included without reading the fetcher.",
+    "lium_tier": "secure",
+    "min_priced": 4,
+    "min_priced_note": "How many rows must actually carry a price. A ratchet, like the anchor's own `ceiling`: the basket has thinned before, ACR-INF going from 6 to 5 priced of 10 requested with no signal anywhere, and `par.Basket.usable` sends a stranger's bill to the FLEET scale once a basket stops being usable \u2014 a scale anchors/GAP.md puts 10x to 1250x off market. Lower it deliberately in a commit, or fix the fetch. Still 4 because the committed anchor predates the Lium rows; raise it to the priced count in the SAME commit as the `make anchors-fetch` that first populates them, or the ratchet guards nothing.",
+    "note": "Median across providers for a comparable accelerator tier.",
+    "trim": 0.0,
+    "unit_conversion": "usd_per_gpu_hour / 3600"
+  },
+  "tool_version": 2,
+  "unit": "$/GPU-sec"
+}

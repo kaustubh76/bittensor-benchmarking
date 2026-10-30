@@ -1,0 +1,42 @@
+[project]
+name = "acr-subnet"
+version = "0.1.0"
+description = "ACR as a Bittensor subnet — competing rate estimators, scored on accuracy, resistance and honesty"
+requires-python = ">=3.11"
+dependencies = ["acr-core", "acr-estimator", "acr-sim", "acr-tape", "numpy>=1.26"]
+
+# No `bittensor` in the BASE dependencies, and that is the whole design. The
+# mechanism — what miners submit, how validators score it, how prints become one
+# consensus rate — is arithmetic over the ACR estimator, and arithmetic does not
+# need a chain. So the engine runs in-process, offline and deterministically, and
+# is testable in CI on a machine that has never heard of Bittensor.
+#
+# The real SDK lives in the `bittensor` extra below, and the adapters under
+# acr_subnet/adapters/ are the network skin over that same engine: if scoring.py
+# had to change to run against a real chain, the mechanism would have been wrong
+# rather than the plumbing. See docs/BITTENSOR.md.
+
+[project.optional-dependencies]
+# The real Bittensor SDK, for running as an actual subnet on a real chain.
+# OPTIONAL on purpose, the same contract acr-oracle-client's `circle` extra and
+# the Model Armor screen already hold: the base install must stay deployable
+# with no heavy SDK, and the 1645-test suite must pass on a machine that has
+# never heard of bittensor. Every import of it is lazy, inside the adapter.
+#
+# v11 is the unified package (it bundles btcli) and supports Python 3.10-3.14.
+# Pinned below 12 because the docs advise pinning exactly for anything
+# unattended, and a major bump here would move the wire protocol.
+bittensor = ["bittensor>=11.1,<12"]
+
+[tool.uv.sources]
+acr-core = { workspace = true }
+acr-estimator = { workspace = true }
+acr-sim = { workspace = true }
+acr-tape = { workspace = true }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["acr_subnet"]

@@ -1,0 +1,337 @@
+{
+  "anchor_sensitive_fields": [],
+  "expected": {
+    "heavy": {
+      "attack_acr_err_bp": {
+        "dir": "lower",
+        "tol_rel": 0.05,
+        "v": 30.304732
+      },
+      "attack_vwap_err_bp": {
+        "dir": "control",
+        "tol_rel": 0.05,
+        "v": 5559.314227
+      },
+      "ci_coverage_n": {
+        "dir": "higher",
+        "of": 12,
+        "tol_abs": 1.0,
+        "v": 2.0
+      },
+      "cleaned_pct_mean": {
+        "dir": "exact",
+        "exact": true,
+        "v": 73.655763
+      },
+      "max_hour_err_bp": {
+        "dir": "lower",
+        "tol_rel": 0.1,
+        "v": 215.037301
+      },
+      "mean_ci_width_bp": {
+        "dir": "report",
+        "tol_rel": 0.05,
+        "v": 101.951429
+      },
+      "mean_winkler_bp": {
+        "dir": "lower",
+        "tol_rel": 0.05,
+        "v": 2926.562584
+      },
+      "median_abs_err_bp": {
+        "dir": "lower",
+        "tol_rel": 0.05,
+        "v": 98.784443
+      },
+      "n_windows": {
+        "dir": "exact",
+        "exact": true,
+        "v": 12.0
+      },
+      "quiet_acr_err_bp": {
+        "dir": "lower",
+        "tol_rel": 0.05,
+        "v": 136.515709
+      },
+      "resistance_ratio": {
+        "dir": "higher",
+        "tol_rel": 0.05,
+        "v": 183.44707
+      }
+    },
+    "heldout_a": {
+      "attack_acr_err_bp": {
+        "dir": "lower",
+        "tol_rel": 0.05,
+        "v": 113.749335
+      },
+      "attack_vwap_err_bp": {
+        "dir": "control",
+        "tol_rel": 0.05,
+        "v": 5812.528356
+      },
+      "ci_coverage_n": {
+        "dir": "higher",
+        "of": 12,
+        "tol_abs": 1.0,
+        "v": 1.0
+      },
+      "cleaned_pct_mean": {
+        "dir": "exact",
+        "exact": true,
+        "v": 74.379397
+      },
+      "max_hour_err_bp": {
+        "dir": "lower",
+        "tol_rel": 0.1,
+        "v": 203.357799
+      },
+      "mean_ci_width_bp": {
+        "dir": "report",
+        "tol_rel": 0.05,
+        "v": 73.188161
+      },
+      "mean_winkler_bp": {
+        "dir": "lower",
+        "tol_rel": 0.05,
+        "v": 3148.899258
+      },
+      "median_abs_err_bp": {
+        "dir": "lower",
+        "tol_rel": 0.05,
+        "v": 121.131059
+      },
+      "n_windows": {
+        "dir": "exact",
+        "exact": true,
+        "v": 12.0
+      },
+      "quiet_acr_err_bp": {
+        "dir": "lower",
+        "tol_rel": 0.05,
+        "v": 106.414904
+      },
+      "resistance_ratio": {
+        "dir": "higher",
+        "tol_rel": 0.05,
+        "v": 51.099449
+      }
+    },
+    "heldout_b": {
+      "attack_acr_err_bp": {
+        "dir": "lower",
+        "tol_rel": 0.05,
+        "v": 138.894697
+      },
+      "attack_vwap_err_bp": {
+        "dir": "control",
+        "tol_rel": 0.05,
+        "v": 3737.032501
+      },
+      "ci_coverage_n": {
+        "dir": "higher",
+        "of": 12,
+        "tol_abs": 1.0,
+        "v": 3.0
+      },
+      "cleaned_pct_mean": {
+        "dir": "exact",
+        "exact": true,
+        "v": 78.215169
+      },
+      "max_hour_err_bp": {
+        "dir": "lower",
+        "tol_rel": 0.1,
+        "v": 244.571208
+      },
+      "mean_ci_width_bp": {
+        "dir": "report",
+        "tol_rel": 0.05,
+        "v": 72.236824
+      },
+      "mean_winkler_bp": {
+        "dir": "lower",
+        "tol_rel": 0.05,
+        "v": 3450.974382
+      },
+      "median_abs_err_bp": {
+        "dir": "lower",
+        "tol_rel": 0.05,
+        "v": 138.717589
+      },
+      "n_windows": {
+        "dir": "exact",
+        "exact": true,
+        "v": 12.0
+      },
+      "quiet_acr_err_bp": {
+        "dir": "lower",
+        "tol_rel": 0.05,
+        "v": 73.881487
+      },
+      "resistance_ratio": {
+        "dir": "higher",
+        "tol_rel": 0.05,
+        "v": 26.905509
+      }
+    },
+    "published": {
+      "attack_acr_err_bp": {
+        "dir": "lower",
+        "tol_rel": 0.05,
+        "v": 106.117063
+      },
+      "attack_vwap_err_bp": {
+        "dir": "control",
+        "tol_rel": 0.05,
+        "v": 5171.313687
+      },
+      "ci_coverage_n": {
+        "dir": "higher",
+        "of": 12,
+        "tol_abs": 1.0,
+        "v": 3.0
+      },
+      "cleaned_pct_mean": {
+        "dir": "exact",
+        "exact": true,
+        "v": 75.038386
+      },
+      "max_hour_err_bp": {
+        "dir": "lower",
+        "tol_rel": 0.1,
+        "v": 207.236074
+      },
+      "mean_ci_width_bp": {
+        "dir": "report",
+        "tol_rel": 0.05,
+        "v": 51.7515
+      },
+      "mean_winkler_bp": {
+        "dir": "lower",
+        "tol_rel": 0.05,
+        "v": 2721.676021
+      },
+      "median_abs_err_bp": {
+        "dir": "lower",
+        "tol_rel": 0.05,
+        "v": 62.751906
+      },
+      "n_windows": {
+        "dir": "exact",
+        "exact": true,
+        "v": 12.0
+      },
+      "quiet_acr_err_bp": {
+        "dir": "lower",
+        "tol_rel": 0.05,
+        "v": 78.07736
+      },
+      "resistance_ratio": {
+        "dir": "higher",
+        "tol_rel": 0.05,
+        "v": 48.73216
+      }
+    },
+    "quiet": {
+      "attack_acr_err_bp": {
+        "dir": "lower",
+        "tol_rel": 0.05,
+        "v": 0.0
+      },
+      "attack_vwap_err_bp": {
+        "dir": "control",
+        "tol_rel": 0.05,
+        "v": 0.0
+      },
+      "ci_coverage_n": {
+        "dir": "higher",
+        "of": 6,
+        "tol_abs": 1.0,
+        "v": 1.0
+      },
+      "cleaned_pct_mean": {
+        "dir": "exact",
+        "exact": true,
+        "v": 62.233883
+      },
+      "max_hour_err_bp": {
+        "dir": "lower",
+        "tol_rel": 0.1,
+        "v": 349.434787
+      },
+      "mean_ci_width_bp": {
+        "dir": "report",
+        "tol_rel": 0.05,
+        "v": 51.790986
+      },
+      "mean_winkler_bp": {
+        "dir": "lower",
+        "tol_rel": 0.05,
+        "v": 5241.456953
+      },
+      "median_abs_err_bp": {
+        "dir": "lower",
+        "tol_rel": 0.05,
+        "v": 121.681837
+      },
+      "n_windows": {
+        "dir": "exact",
+        "exact": true,
+        "v": 6.0
+      },
+      "quiet_acr_err_bp": {
+        "dir": "lower",
+        "tol_rel": 0.05,
+        "v": 147.898996
+      }
+    }
+  },
+  "index_id": "ACR-DATA",
+  "policy_hash": "0xa828392b6f2dd69503ff8b31a0ab70a8a580286457b3cfddeea4d77fe5ecf1b2",
+  "policy_version": 2,
+  "scenarios": [
+    {
+      "attack_from": 4,
+      "attack_to": 8,
+      "budget": 6000.0,
+      "hours": 12,
+      "name": "published",
+      "seed": 21
+    },
+    {
+      "attack_from": 4,
+      "attack_to": 8,
+      "budget": 6000.0,
+      "hours": 12,
+      "name": "heldout_a",
+      "seed": 101
+    },
+    {
+      "attack_from": 2,
+      "attack_to": 10,
+      "budget": 6000.0,
+      "hours": 12,
+      "name": "heldout_b",
+      "seed": 202
+    },
+    {
+      "attack_from": 0,
+      "attack_to": 0,
+      "budget": 0.0,
+      "hours": 6,
+      "name": "quiet",
+      "seed": 303
+    },
+    {
+      "attack_from": 4,
+      "attack_to": 8,
+      "budget": 24000.0,
+      "hours": 12,
+      "name": "heavy",
+      "seed": 404
+    }
+  ],
+  "schema": "acr.evalset/1",
+  "tool_version": 1
+}

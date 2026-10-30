@@ -1,0 +1,171 @@
+name: bittensor-refresh
+
+# The two captures nothing automated has ever run, and the canary that watches
+# the upstreams they read.
+#
+# WHY THIS FILE EXISTS. `grep -ri "subnet|bittensor|chutes|lium"
+# .github/workflows/*.yml` returned ZERO hits before it. Both captures are
+# documented "network, manual, never CI", every SN51/SN64 gate in CI reads a
+# COMMITTED file, and the consequences had both already happened:
+#
+#   * The archive. Chutes `/invocations/usage` retains ~12 days. A gap longer
+#     than that is a PERMANENT hole in the history of a product whose entire
+#     purpose is a continuous series — 2026-10-18 had already aged off upstream
+#     and survived only because it was sitting in a fixture. This is the only
+#     irreversible item in the whole integration: every other finding can be
+#     fixed later, and a missing day cannot.
+#   * The anchor. `ANCHOR_MAX_AGE_S` is 30 days and the deployed basket was
+#     24.4 days old — ~5.6 days of runway before `/par` silently reprices an
+#     outsider's bill onto the FLEET's own quotes, a scale anchors/GAP.md puts
+#     10x to 1250x off market. The staleness ratchet worked perfectly; nothing
+#     ever pulled its trigger.
+#
+# WHAT IT DELIBERATELY DOES NOT DO. It never runs `--capture-fixture`. The
+# fixtures under tests/fixtures/bt/ are the inputs every Bittensor gate asserts
+# against, so a robot rewriting them would convert an upstream change into a
+# silently-green test run — the exact failure mode the canary exists to catch.
+# Fixture refreshes stay `make subnet-snapshot`, by hand, in a commit somebody
+# read. The FIXTURE-BASED SERVING DESIGN IS NOT A BUG: determinism and offline
+# CI are deliberate and worth preserving. What is automated here is the refresh,
+# never the serving path.
+#
+# ON THE CADENCE. Measured on this private repo, GitHub drops most scheduled
+# ticks: keepalive.yml ran 17 of its 144 slots in 24h, with gaps up to 3.4h. So
+# the tape runs FOUR times a day rather than once. `bt_snapshot` dedupes on a
+# natural key, which makes every extra run a no-op and three dropped ticks
+# survivable — against a 12-day retention window, a daily job that fires 20% of
+# the time is not a backup. The anchor is a separate, once-daily cron because it
+# rewrites a dated file and four commits a day of the same observation is churn
+# with no information in it.
+
+on:
+  schedule:
+    # The tape. Four times a day against dropped ticks; a no-op when today is
+    # already captured.
+    - cron: "17 */6 * * *"
+    # The anchor. Once; distinguished from the above by `github.event.schedule`.
+    - cron: "41 5 * * *"
+  workflow_dispatch:
+    inputs:
+      anchors:
+        description: "Also re-anchor (hits OpenRouter + Lium and rewrites anchors/)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  # Two ticks must never race the same commit-back.
+  group: bittensor-refresh
+  cancel-in-progress: false
+
+jobs:
+  # Allowed to fail without blocking anything, which is the whole point: a
+  # third-party outage is not a reason to stop shipping, it is a reason for
+  # somebody to know. Runs FIRST so a shape change is named before the capture
+  # steps below write anything based on it.
+  canary:
+    # Both homes of this integration: the full product, and the Bittensor
+    # submission repo that carries the SN51/SN64 subset. Each archives into
+    # its own checkout, which is the point -- the forward poll is only worth
+    # anything if it runs where the series is kept.
+    if: contains(fromJSON('["kaustubh76/ACR---Arc-Compute-Rate", "kaustubh76/bittensor-benchmarking"]'), github.repository)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.11"
+          enable-cache: true
+      - name: Do the upstreams still look like what we parse?
+        run: uv run python scripts/bt_canary.py
+
+  refresh:
+    # Both homes of this integration: the full product, and the Bittensor
+    # submission repo that carries the SN51/SN64 subset. Each archives into
+    # its own checkout, which is the point -- the forward poll is only worth
+    # anything if it runs where the series is kept.
+    if: contains(fromJSON('["kaustubh76/ACR---Arc-Compute-Rate", "kaustubh76/bittensor-benchmarking"]'), github.repository)
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.11"
+          enable-cache: true
+      - name: Sync workspace
+        run: uv sync --all-packages
+
+      # ── the irreversible half ────────────────────────────────────────────
+      # Appends today's observation to the cumulative archive under services/,
+      # which is where it lives because data/ is in BOTH .gitignore and
+      # .dockerignore and production has no persistent disk.
+      - name: Append today to the cumulative subnet tape
+        run: uv run python scripts/bt_snapshot.py
+
+      # The archive is the thing a consumer reads, so it has to stay readable.
+      # `ChutesSource` tolerates a truncated line per line rather than per file,
+      # but a tape that no longer parses into events is worth catching here
+      # instead of at the next refresh.
+      - name: The archive still builds a tape
+        run: uv run pytest tests/test_bt_tape_archive.py -q -p no:cacheprovider --import-mode=importlib
+
+      # ── the expiring half ────────────────────────────────────────────────
+      - name: Re-anchor ACR-INF / ACR-GPU / ACR-DATA
+        id: anchor
+        if: github.event.schedule == '41 5 * * *' || inputs.anchors
+        run: uv run python scripts/anchors.py --fetch
+
+      # BEFORE the commit, on purpose. `--check` is what notices a reshaped 200,
+      # a basket that thinned under `rule.min_priced`, a gap past its `ceiling`
+      # or more thin accelerator classes than `rule.lium_max_thin` allows. A
+      # fetch that fails it must leave the previous anchor in place and go RED,
+      # because every one of those is a human decision and none of them is
+      # "commit it anyway".
+      - name: The fetched anchor passes its own gates
+        if: steps.anchor.outcome == 'success'
+        run: |
+          uv run python scripts/anchors.py --check
+          uv run python scripts/anchors.py --report
+
+      # ── commit the diff ──────────────────────────────────────────────────
+      - name: Commit what moved
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Scoped paths, never `git add -A`: this job must be incapable of
+          # committing a fixture, a lockfile or anything else a run leaves
+          # behind in the tree.
+          git add services/index_api/index_api/bt_tape anchors/ACR-INF anchors/ACR-GPU \
+                  anchors/ACR-DATA anchors/GAP.md 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "nothing moved — today is already captured"
+            exit 0
+          fi
+          git diff --cached --stat
+          git commit -m "chore(bittensor): scheduled subnet capture
+
+          Appended today's SN64/SN51 observation to the cumulative archive, and
+          re-anchored if this was the daily anchor tick. Written by
+          .github/workflows/bittensor-refresh.yml; the anchor passed
+          \`scripts/anchors.py --check\` before this commit was made.
+
+          Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>"
+          # Rebase rather than merge: this branch is linear and a scheduled
+          # robot has no business authoring a merge commit.
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      # Reads the clock off the HOST rather than the working tree, which is the
+      # pair of numbers that actually diverged: the checkout can be freshly
+      # anchored while the deployed image still serves a basket weeks older.
+      # Warn-only, because the free-tier presses cold-start and a gate that goes
+      # red because a service was asleep gets ignored.
+      - name: How old is the basket production actually SERVES?
+        continue-on-error: true
+        run: uv run python scripts/anchors.py --check-live https://acr-api-mainnet.onrender.com

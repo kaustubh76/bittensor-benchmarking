@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.uv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+.coverage
+htmlcov/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+apps/terminal/.env.local
+*.tsbuildinfo
+
+# Foundry
+contracts/out/
+contracts/cache/
+contracts/broadcast/
+contracts/lib/
+
+# Data / artifacts
+data/
+*.parquet
+scripts/_out/
+.env
+.DS_Store
+
+# Competitive/ideation material that must never reach a PUBLIC repo.
+# ETHGlobal_Online.md names prize targets, a designated-alternate contingency,
+# a dropped-sponsor list and a counter-strategy to the continuity-scoring rule.
+# It was nearly committed once; the entry is the guard, not the reminder.
+ETHGlobal_Online.md
+# Tameion (Canteen x Circle x Arc, Sep 27 - Oct 10 2026): the operator plan names
+# a prior competition loss in one line, maps the build onto the judging weights,
+# targets a ~120-developer community by name for outreach, and plans to ask rival
+# teams in the cohort to route their spend through us because "judges notice it".
+# The board carries the same traction tiers. Same rule as above: strategy for an
+# ACTIVE, invite-only competition does not go in a public repo. The submission
+# itself is public; the plan to win it is not.
+Tameion_MachineTCA_Operator_Plan.md
+Agoranomos_Tameion_Board.excalidraw
+# The private implementation record: the same competition framing plus the
+# unshipped items and the blocked list. docs/TAMEION.md is the public one.
+TAMEION_IMPLEMENTATION.md
+# Orphan scratch canvas. scripts/gen_architecture.py writes the TRACKED
+# acr_architecture.excalidraw; nothing reads this one.
+ACR_MachineTCA_Architecture_FULL.excalidraw
+# The working register: ground state, market sizing, competitor analysis and a
+# named outreach target list. Same rule as the entries above — the submission is
+# public, the plan behind it is not. It also carries the defect register, which
+# is honest internal engineering and not a thing to hand a reviewer out of
+# context.
+ACR_REGISTER.md
+
+# aomi-build writes local deploy state here; .aomi/config.json is committed.
+.aomi/deployment.json

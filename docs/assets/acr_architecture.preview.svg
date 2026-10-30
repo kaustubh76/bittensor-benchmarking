@@ -1,0 +1,448 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3500" height="3460" viewBox="0 0 3500 3460" font-family="Helvetica,Arial,sans-serif">
+<rect width="3500" height="3460" fill="#ffffff"/>
+<defs><marker id="a" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#333"/></marker></defs>
+<rect x="2840" y="40" width="620" height="250" rx="4" fill="transparent" stroke="#495057" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="2864" y="84" width="18" height="18" rx="0" fill="#0c8599" stroke="#0c8599" stroke-width="1"/>
+<rect x="2864" y="108" width="18" height="18" rx="0" fill="#1971c2" stroke="#1971c2" stroke-width="1"/>
+<rect x="2864" y="132" width="18" height="18" rx="0" fill="#f08c00" stroke="#f08c00" stroke-width="1"/>
+<rect x="2864" y="156" width="18" height="18" rx="0" fill="#e8590c" stroke="#e8590c" stroke-width="1"/>
+<rect x="2864" y="180" width="18" height="18" rx="0" fill="#2f9e44" stroke="#2f9e44" stroke-width="1"/>
+<rect x="2864" y="204" width="18" height="18" rx="0" fill="#9c36b5" stroke="#9c36b5" stroke-width="1"/>
+<rect x="2864" y="228" width="18" height="18" rx="0" fill="#e03131" stroke="#e03131" stroke-width="1"/>
+<rect x="2864" y="252" width="18" height="18" rx="0" fill="#495057" stroke="#495057" stroke-width="1"/>
+<rect x="40" y="300" width="620" height="790" rx="4" fill="transparent" stroke="#0c8599" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="60" y="352" width="560" height="112" rx="4" fill="transparent" stroke="#0c8599" stroke-width="2"/>
+<rect x="60" y="474" width="560" height="120" rx="4" fill="transparent" stroke="#0c8599" stroke-width="2"/>
+<rect x="60" y="604" width="560" height="112" rx="4" fill="transparent" stroke="#e8590c" stroke-width="2"/>
+<rect x="60" y="726" width="560" height="120" rx="4" fill="transparent" stroke="#e03131" stroke-width="2"/>
+<rect x="60" y="856" width="560" height="120" rx="4" fill="transparent" stroke="#0c8599" stroke-width="2"/>
+<rect x="700" y="300" width="1480" height="900" rx="4" fill="transparent" stroke="#1971c2" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="725" y="352" width="350" height="120" rx="4" fill="transparent" stroke="#1971c2" stroke-width="2"/>
+<rect x="1100" y="352" width="430" height="175" rx="4" fill="transparent" stroke="#1971c2" stroke-width="2"/>
+<rect x="725" y="500" width="360" height="215" rx="4" fill="transparent" stroke="#1971c2" stroke-width="2"/>
+<rect x="1160" y="560" width="370" height="180" rx="4" fill="transparent" stroke="#1971c2" stroke-width="2"/>
+<rect x="725" y="750" width="400" height="180" rx="4" fill="transparent" stroke="#1971c2" stroke-width="2"/>
+<rect x="1160" y="762" width="370" height="96" rx="4" fill="transparent" stroke="#1971c2" stroke-width="2"/>
+<rect x="1160" y="888" width="370" height="150" rx="4" fill="transparent" stroke="#f08c00" stroke-width="2"/>
+<rect x="725" y="962" width="400" height="200" rx="4" fill="transparent" stroke="#e03131" stroke-width="2"/>
+<rect x="2220" y="300" width="560" height="880" rx="4" fill="transparent" stroke="#e8590c" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="2240" y="352" width="510" height="116" rx="4" fill="transparent" stroke="#e8590c" stroke-width="2"/>
+<rect x="2240" y="480" width="510" height="205" rx="4" fill="transparent" stroke="#e8590c" stroke-width="2"/>
+<rect x="2240" y="697" width="510" height="116" rx="4" fill="transparent" stroke="#e8590c" stroke-width="2"/>
+<rect x="2240" y="825" width="510" height="92" rx="4" fill="transparent" stroke="#e8590c" stroke-width="2"/>
+<rect x="2240" y="929" width="510" height="132" rx="4" fill="transparent" stroke="#e8590c" stroke-width="2"/>
+<rect x="2240" y="1073" width="510" height="96" rx="4" fill="transparent" stroke="#e8590c" stroke-width="2"/>
+<rect x="2220" y="1210" width="560" height="350" rx="4" fill="transparent" stroke="#2f9e44" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="2240" y="1256" width="510" height="96" rx="4" fill="transparent" stroke="#2f9e44" stroke-width="2"/>
+<rect x="2240" y="1358" width="510" height="96" rx="4" fill="transparent" stroke="#2f9e44" stroke-width="2"/>
+<rect x="2240" y="1460" width="510" height="96" rx="4" fill="transparent" stroke="#2f9e44" stroke-width="2"/>
+<rect x="700" y="1250" width="1480" height="360" rx="4" fill="transparent" stroke="#9c36b5" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="725" y="1302" width="430" height="190" rx="4" fill="transparent" stroke="#9c36b5" stroke-width="2"/>
+<rect x="1175" y="1302" width="430" height="190" rx="4" fill="transparent" stroke="#9c36b5" stroke-width="2"/>
+<rect x="1640" y="1302" width="510" height="190" rx="4" fill="transparent" stroke="#9c36b5" stroke-width="2"/>
+<rect x="700" y="1630" width="1480" height="410" rx="4" fill="transparent" stroke="#9c36b5" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="725" y="1682" width="430" height="168" rx="4" fill="transparent" stroke="#9c36b5" stroke-width="2"/>
+<rect x="1175" y="1682" width="430" height="168" rx="4" fill="transparent" stroke="#9c36b5" stroke-width="2"/>
+<rect x="1640" y="1682" width="510" height="168" rx="4" fill="transparent" stroke="#9c36b5" stroke-width="2"/>
+<rect x="725" y="1870" width="700" height="150" rx="4" fill="transparent" stroke="#9c36b5" stroke-width="2"/>
+<rect x="40" y="1150" width="620" height="300" rx="4" fill="transparent" stroke="#e03131" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="60" y="1202" width="560" height="150" rx="4" fill="transparent" stroke="#e03131" stroke-width="2"/>
+<rect x="60" y="1362" width="560" height="78" rx="4" fill="transparent" stroke="#e03131" stroke-width="2"/>
+<rect x="2220" y="1590" width="560" height="300" rx="4" fill="transparent" stroke="#495057" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="2240" y="1642" width="510" height="180" rx="4" fill="transparent" stroke="#495057" stroke-width="2"/>
+<rect x="2840" y="320" width="620" height="240" rx="4" fill="transparent" stroke="#f08c00" stroke-width="2"/>
+<rect x="2840" y="590" width="620" height="470" rx="4" fill="transparent" stroke="#1e1e1e" stroke-width="2"/>
+<rect x="2840" y="1090" width="620" height="800" rx="4" fill="transparent" stroke="#f08c00" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="40" y="2060" width="3420" height="250" rx="4" fill="transparent" stroke="#0c8599" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="60" y="2135" width="520" height="150" rx="4" fill="transparent" stroke="#0c8599" stroke-width="2"/>
+<rect x="626" y="2135" width="520" height="150" rx="4" fill="transparent" stroke="#0c8599" stroke-width="2"/>
+<rect x="1192" y="2135" width="520" height="150" rx="4" fill="transparent" stroke="#0c8599" stroke-width="2"/>
+<rect x="1758" y="2135" width="520" height="150" rx="4" fill="transparent" stroke="#0c8599" stroke-width="2"/>
+<rect x="2324" y="2135" width="520" height="150" rx="4" fill="transparent" stroke="#0c8599" stroke-width="2"/>
+<rect x="2890" y="2135" width="520" height="150" rx="4" fill="transparent" stroke="#0c8599" stroke-width="2"/>
+<rect x="40" y="2720" width="3420" height="330" rx="4" fill="transparent" stroke="#1971c2" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="60" y="2795" width="540" height="215" rx="4" fill="transparent" stroke="#e8590c" stroke-width="2"/>
+<rect x="630" y="2795" width="540" height="215" rx="4" fill="transparent" stroke="#0c8599" stroke-width="2"/>
+<rect x="1200" y="2795" width="540" height="215" rx="4" fill="transparent" stroke="#1971c2" stroke-width="2"/>
+<rect x="1770" y="2795" width="540" height="215" rx="4" fill="transparent" stroke="#9c36b5" stroke-width="2"/>
+<rect x="2340" y="2795" width="540" height="215" rx="4" fill="transparent" stroke="#f08c00" stroke-width="2"/>
+<rect x="2910" y="2795" width="530" height="215" rx="4" fill="transparent" stroke="#9c36b5" stroke-width="2"/>
+<rect x="40" y="3080" width="3420" height="340" rx="4" fill="transparent" stroke="#495057" stroke-width="2" stroke-dasharray="7 5"/>
+<rect x="60" y="3150" width="450" height="240" rx="4" fill="transparent" stroke="#495057" stroke-width="2"/>
+<rect x="546" y="3150" width="450" height="240" rx="4" fill="transparent" stroke="#495057" stroke-width="2"/>
+<rect x="1032" y="3150" width="450" height="240" rx="4" fill="transparent" stroke="#495057" stroke-width="2"/>
+<rect x="1518" y="3150" width="450" height="240" rx="4" fill="transparent" stroke="#e8590c" stroke-width="2"/>
+<rect x="2004" y="3150" width="450" height="240" rx="4" fill="transparent" stroke="#495057" stroke-width="2"/>
+<rect x="2490" y="3150" width="450" height="240" rx="4" fill="transparent" stroke="#495057" stroke-width="2"/>
+<rect x="2976" y="3150" width="450" height="240" rx="4" fill="transparent" stroke="#495057" stroke-width="2"/>
+<polyline points="620,408.0 686,408.0 686,412.0 725,412.0" fill="none" stroke="#0c8599" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="620,534.0 680,534.0 680,412.0 725,412.0" fill="none" stroke="#0c8599" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="620,786.0 674,786.0 674,412.0 725,412.0" fill="none" stroke="#e03131" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="620,916.0 668,916.0 668,412.0 725,412.0" fill="none" stroke="#0c8599" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#a)"/>
+<polyline points="1075,412.0 1087.5,412.0 1087.5,439.5 1100,439.5" fill="none" stroke="#1971c2" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="900.0,472 900.0,486.0 905.0,486.0 905.0,500" fill="none" stroke="#1971c2" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="1315.0,527 1315.0,543.5 1345.0,543.5 1345.0,560" fill="none" stroke="#1971c2" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="1085,607.5 1122.5,607.5 1122.5,650.0 1160,650.0" fill="none" stroke="#1971c2" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="1160,650.0 1142,650.0 1142,840.0 1125,840.0" fill="none" stroke="#1971c2" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="620,660.0 688,660.0 688,840.0 725,840.0" fill="none" stroke="#e8590c" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#a)"/>
+<polyline points="1345.0,740 1345.0,751.0 1345.0,762" fill="none" stroke="#1971c2" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#a)"/>
+<polyline points="1125,840.0 1142,840.0 1142,963.0 1160,963.0" fill="none" stroke="#1971c2" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="1160,963.0 1142,963.0 1142,1062.0 1125,1062.0" fill="none" stroke="#e03131" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="620,660.0 680,660.0 680,285.0 2195,285.0 2195,755.0 2240,755.0" fill="none" stroke="#e8590c" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#a)"/>
+<polyline points="2495.0,468 2495.0,474.0 2495.0,480" fill="none" stroke="#e8590c" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="1530,963.0 1885,963.0 1885,582.5 2240,582.5" fill="none" stroke="#e8590c" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="2240,582.5 2200,582.5 2200,1304.0 2240,1304.0" fill="none" stroke="#2f9e44" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="2495.0,1358 2495.0,1355.0 2495.0,1352" fill="none" stroke="#2f9e44" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="2240,1508.0 2190,1508.0 2190,1304.0 2240,1304.0" fill="none" stroke="#2f9e44" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="2240,1304.0 2210,1304.0 2210,1228.0 955,1228.0 940.0,1228.0 940.0,1302.0" fill="none" stroke="#2f9e44" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#a)"/>
+<polyline points="2240,582.5 2205,582.0 2205,1236.0 940,1236.0 940.0,1302.0" fill="none" stroke="#e8590c" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#a)"/>
+<polyline points="925.0,1162 925.0,1232.0 940.0,1232.0 940.0,1302" fill="none" stroke="#9c36b5" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="1175,1397.0 1165.0,1397.0 1155,1397.0" fill="none" stroke="#9c36b5" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="940.0,1302 940.0,1272 1895.0,1272 1895.0,1302" fill="none" stroke="#9c36b5" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="725,1397.0 680,1397.0 680,2115.0 1452,2115.0 1452.0,2135.0" fill="none" stroke="#9c36b5" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#a)"/>
+<polyline points="580,2210.0 603,2210.0 603,2040.0 680,2040.0 680,412.0 725,412.0" fill="none" stroke="#0c8599" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#a)"/>
+<polyline points="620,786.0 684,786.0 684,1277.0 620,1277.0" fill="none" stroke="#e03131" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#a)"/>
+<polyline points="1390.0,1682 1390.0,1587.0 1390.0,1492" fill="none" stroke="#9c36b5" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="1175,1766.0 1165.0,1766.0 1155,1766.0" fill="none" stroke="#9c36b5" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#a)"/>
+<polyline points="940.0,1492 940.0,1587.0 940.0,1682" fill="none" stroke="#9c36b5" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#a)"/>
+<polyline points="1390.0,1492 1390.0,1587 1895.0,1587 1895.0,1682" fill="none" stroke="#9c36b5" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#a)"/>
+<polyline points="725,1397.0 670,1397.0 670,1945.0 725,1945.0" fill="none" stroke="#9c36b5" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#a)"/>
+<polyline points="1425,1945.0 1622,1945.0 1622,1397.0 1605,1397.0" fill="none" stroke="#9c36b5" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="1425,1945.0 2210,1945.0 2210,1304.0 2240,1304.0" fill="none" stroke="#2f9e44" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="2750,410.0 2800,410.0 2800,1121.0 2750,1121.0" fill="none" stroke="#e8590c" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="600,2902.5 615.0,2902.5 630,2902.5" fill="none" stroke="#0c8599" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="1170,2902.5 1185.0,2902.5 1200,2902.5" fill="none" stroke="#1971c2" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="1740,2902.5 1755.0,2902.5 1770,2902.5" fill="none" stroke="#9c36b5" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="2310,2902.5 2325.0,2902.5 2340,2902.5" fill="none" stroke="#f08c00" stroke-width="2" marker-end="url(#a)"/>
+<polyline points="2880,2902.5 2895.0,2902.5 2910,2902.5" fill="none" stroke="#9c36b5" stroke-width="2" marker-end="url(#a)"/>
+<text x="60" y="68.8" font-size="32" fill="#1e1e1e">ACR — THE ARC COMPUTE RATE</text>
+<text x="60" y="105.5" font-size="15" fill="#495057">A manipulation-resistant benchmark family for machine commerce · one estimand · four pillars · settlement-grade on-chain rate</text>
+<text x="60" y="127.7" font-size="13" fill="#2f9e44">◆ LIVE on Arc MAINNET (chain 5042) · Terminal on Vercel · Seller API on Render · hourly Circle-signed posts · agents read AND trade the rate (autonomous hedger)</text>
+<text x="2858" y="65.5" font-size="15" fill="#495057">LEGEND</text>
+<text x="2892" y="94.7" font-size="13" fill="#1e1e1e">market exhaust / inputs</text>
+<text x="2892" y="118.7" font-size="13" fill="#1e1e1e">estimator core (the product)</text>
+<text x="2892" y="142.7" font-size="13" fill="#1e1e1e">ACR prints / positioning</text>
+<text x="2892" y="166.7" font-size="13" fill="#1e1e1e">on-chain (Foundry)</text>
+<text x="2892" y="190.7" font-size="13" fill="#1e1e1e">instrument (cash-settled)</text>
+<text x="2892" y="214.7" font-size="13" fill="#1e1e1e">distribution (x402)</text>
+<text x="2892" y="238.7" font-size="13" fill="#1e1e1e">adversarial / red team</text>
+<text x="2892" y="262.7" font-size="13" fill="#1e1e1e">zones / verification</text>
+<text x="58" y="325.5" font-size="15" fill="#0c8599">A · MARKET EXHAUST &amp; INGESTION</text>
+<text x="73" y="375.5" font-size="15" fill="#0c8599">x402 AUTHORIZATIONS</text>
+<text x="73" y="398.2" font-size="13" fill="#1e1e1e">EIP-3009 signed payloads</text>
+<text x="73" y="411.2" font-size="13" fill="#1e1e1e">price · size · buyer · seller · ts</text>
+<text x="73" y="424.2" font-size="13" fill="#1e1e1e">highest-frequency observable</text>
+<text x="73" y="497.5" font-size="15" fill="#0c8599">GATEWAY BATCH SETTLEMENTS</text>
+<text x="73" y="520.2" font-size="13" fill="#1e1e1e">net positions, settled later</text>
+<text x="73" y="533.2" font-size="13" fill="#1e1e1e">observed = latent ∘ batch-op + noise</text>
+<text x="73" y="546.2" font-size="13" fill="#1e1e1e">y = H·x + v   (the convolution)</text>
+<text x="73" y="627.5" font-size="15" fill="#e8590c">SELLER ATTESTATIONS</text>
+<text x="73" y="650.2" font-size="13" fill="#1e1e1e">EIP-712: model class · latency SLO · schema</text>
+<text x="73" y="663.2" font-size="13" fill="#1e1e1e">→ AttestationRegistry.sol</text>
+<text x="73" y="676.2" font-size="13" fill="#1e1e1e">feeds Pillar-2 features</text>
+<text x="73" y="749.5" font-size="15" fill="#e03131">ADVERSARIAL FLOW</text>
+<text x="73" y="772.2" font-size="13" fill="#1e1e1e">self-deals · reciprocal funding ring</text>
+<text x="73" y="785.2" font-size="13" fill="#1e1e1e">pure-sybil cluster (all 3 shapes)</text>
+<text x="73" y="798.2" font-size="13" fill="#1e1e1e">a first-class contaminated input</text>
+<text x="73" y="879.5" font-size="15" fill="#0c8599">TapeSource (ABC)</text>
+<text x="73" y="901.3" font-size="12" fill="#1e1e1e">SimSource — calibrated simulator</text>
+<text x="73" y="913.3" font-size="12" fill="#1e1e1e">ArcSource — Arc 5042 live decode</text>
+<text x="73" y="925.3" font-size="12" fill="#1e1e1e">attested-market: amount = price · non-attested dropped</text>
+<text x="718" y="325.5" font-size="15" fill="#1971c2">B · ESTIMATOR CORE — one estimand: the latent price of machine services</text>
+<text x="738" y="375.5" font-size="15" fill="#1971c2">TAPE INDEXER</text>
+<text x="738" y="398.2" font-size="13" fill="#1e1e1e">raw event ingestion</text>
+<text x="738" y="411.2" font-size="13" fill="#1e1e1e">volume-time bars (equal $)</text>
+<text x="738" y="424.2" font-size="13" fill="#1e1e1e">clean ticks — Malachite finality</text>
+<text x="1113" y="375.5" font-size="15" fill="#1971c2">OBSERVATION MODEL · Pillar 1</text>
+<text x="1113" y="398.2" font-size="13" fill="#1e1e1e">observed = latent ∘ batch-H + noise</text>
+<text x="1113" y="411.2" font-size="13" fill="#1e1e1e">state-space; H = box avg, width k</text>
+<text x="1113" y="424.2" font-size="13" fill="#1e1e1e">Kalman filter + RTS smoother</text>
+<text x="1113" y="437.2" font-size="13" fill="#1e1e1e">deconvolves batching; var → CI</text>
+<text x="1113" y="450.2" font-size="13" fill="#1e1e1e">observation_model.py</text>
+<text x="738" y="523.5" font-size="15" fill="#1971c2">CLEANING STACK</text>
+<text x="738" y="546.2" font-size="13" fill="#1e1e1e">4 funding-graph defenses:</text>
+<text x="738" y="559.2" font-size="13" fill="#1e1e1e">· self-deal  (buyer = seller)</text>
+<text x="738" y="572.2" font-size="13" fill="#1e1e1e">· wash-cycle  (reciprocal A↔B)</text>
+<text x="738" y="585.2" font-size="13" fill="#1e1e1e">· Louvain sybil   I/(I+B)</text>
+<text x="738" y="598.2" font-size="13" fill="#1e1e1e">· 2-sided cluster caps</text>
+<text x="738" y="611.2" font-size="13" fill="#1e1e1e">~100% injected wash zeroed</text>
+<text x="1173" y="583.5" font-size="15" fill="#1971c2">ROBUST ESTIMATOR</text>
+<text x="1173" y="606.2" font-size="13" fill="#1e1e1e">α-trim volume-weighted median</text>
+<text x="1173" y="619.2" font-size="13" fill="#1e1e1e">breakdown point ½</text>
+<text x="1173" y="632.2" font-size="13" fill="#1e1e1e">weighted-bootstrap CI / print</text>
+<text x="1173" y="645.2" font-size="13" fill="#1e1e1e">robust.py</text>
+<text x="738" y="773.5" font-size="15" fill="#1971c2">HEDONIC ADJUSTMENT · Pillar 2</text>
+<text x="738" y="796.2" font-size="13" fill="#1e1e1e">WLS:  log p ~ quality features</text>
+<text x="738" y="809.2" font-size="13" fill="#1e1e1e">reprice → MID / 250ms reference</text>
+<text x="738" y="822.2" font-size="13" fill="#1e1e1e">→ constant-quality rate</text>
+<text x="738" y="835.2" font-size="13" fill="#1e1e1e">Case-Shiller for compute</text>
+<text x="738" y="848.2" font-size="13" fill="#1e1e1e">hedonic.py</text>
+<text x="1173" y="785.5" font-size="15" fill="#1971c2">ROBUSTNESS DIAGNOSTICS</text>
+<text x="1173" y="808.2" font-size="13" fill="#1e1e1e">single-cluster flip  c/(0.5(1−2α))</text>
+<text x="1173" y="821.2" font-size="13" fill="#1e1e1e">leave-one-community-out shift (bp)</text>
+<text x="1173" y="834.2" font-size="13" fill="#1e1e1e">robustness.py</text>
+<text x="1173" y="911.5" font-size="15" fill="#f08c00">ACR PRINTS (hourly)</text>
+<text x="1173" y="934.2" font-size="13" fill="#1e1e1e">ACR-INF  $/1k tokens</text>
+<text x="1173" y="947.2" font-size="13" fill="#1e1e1e">ACR-GPU  $/GPU-sec</text>
+<text x="1173" y="960.2" font-size="13" fill="#1e1e1e">ACR-DATA  $/MB</text>
+<text x="1173" y="973.2" font-size="13" fill="#1e1e1e">+ CI  + attack-cost / bp</text>
+<text x="738" y="985.5" font-size="15" fill="#e03131">MANIPULATION COST BOUND · Pillar 3</text>
+<text x="738" y="1008.2" font-size="13" fill="#1e1e1e">least surviving wash N* to move 1bp</text>
+<text x="738" y="1021.2" font-size="13" fill="#1e1e1e">threat: cleaning-evading sybil</text>
+<text x="738" y="1034.2" font-size="13" fill="#1e1e1e">cost = 2N*·fee_bp + (N*/trade + ids)·fee_flat</text>
+<text x="738" y="1047.2" font-size="13" fill="#1e1e1e">a NUMBER on Arc (deterministic fee)</text>
+<text x="738" y="1060.2" font-size="13" fill="#1e1e1e">bound.py + redteam/optimal_attack.py</text>
+<text x="2238" y="325.5" font-size="15" fill="#e8590c">C · ON-CHAIN (settlement-grade)</text>
+<text x="2253" y="375.5" font-size="15" fill="#e8590c">SIGNER (custody-only in prod)</text>
+<text x="2253" y="396.4" font-size="11" fill="#1e1e1e">build_role_signer(maker·taker·poster·owner) → own Circle wallet</text>
+<text x="2253" y="407.4" font-size="11" fill="#1e1e1e">CircleWalletSigner (Dev-Controlled) · ignores ambient .env key</text>
+<text x="2253" y="418.4" font-size="11" fill="#1e1e1e">LocalKeySigner only for dev/anvil · docs/WALLETS.md</text>
+<text x="2253" y="503.5" font-size="15" fill="#e8590c">ACROracle.sol</text>
+<text x="2253" y="526.2" font-size="13" fill="#1e1e1e">EIP-712 verifies the signer</text>
+<text x="2253" y="539.2" font-size="13" fill="#1e1e1e">any relayer submits postPrint</text>
+<text x="2253" y="552.2" font-size="13" fill="#1e1e1e">invariants: value∈CI · bound&gt;0</text>
+<text x="2253" y="565.2" font-size="13" fill="#1e1e1e">monotone ts · MAX_TS_SKEW</text>
+<text x="2253" y="578.2" font-size="13" fill="#1e1e1e">isStale · pause · 2-step owner</text>
+<text x="2253" y="720.5" font-size="15" fill="#e8590c">AttestationRegistry.sol</text>
+<text x="2253" y="743.2" font-size="13" fill="#1e1e1e">EIP-712 seller metadata · nonce + deadline</text>
+<text x="2253" y="756.2" font-size="13" fill="#1e1e1e">attestWithSig — seller signs, relayer pays</text>
+<text x="2253" y="769.2" font-size="13" fill="#1e1e1e">→ one relayer registers many sellers</text>
+<text x="2253" y="848.5" font-size="15" fill="#e8590c">FOUNDRY</text>
+<text x="2253" y="870.3" font-size="12" fill="#1e1e1e">80 tests · oracle · registry · futures · attestor · receipt mirror</text>
+<text x="2253" y="882.3" font-size="12" fill="#1e1e1e">invariants: netOI=0 · collateral-backed · fail_on_revert</text>
+<text x="2253" y="952.5" font-size="15" fill="#e8590c">CIRCLE DEPLOY</text>
+<text x="2253" y="974.3" font-size="12" fill="#1e1e1e">Smart Contract Platform + Gas Station</text>
+<text x="2253" y="986.3" font-size="12" fill="#1e1e1e">oracle + registry + ACRFutures → setSigner</text>
+<text x="2253" y="998.3" font-size="12" fill="#1e1e1e">deploy_circle.py · Deploy / DeployFutures / DeployAttestor.s.sol</text>
+<text x="2253" y="1096.5" font-size="15" fill="#e8590c">FeedAccessAttestor.sol</text>
+<text x="2253" y="1117.4" font-size="11" fill="#1e1e1e">EIP-712 FeedAccess: payer·beneficiary·paidUntil·amountUsdc·nonce</text>
+<text x="2253" y="1128.4" font-size="11" fill="#1e1e1e">seller signs (poster Circle wallet) · anyone relays redeem()</text>
+<text x="2253" y="1139.4" font-size="11" fill="#1e1e1e">hasFeedAccess(addr) → on-chain fact · MAX_ACCESS_WINDOW 90d</text>
+<text x="2253" y="1150.4" font-size="11" fill="#1e1e1e">0xe671…FD47 · attest_feed_access.py</text>
+<text x="2238" y="1235.5" font-size="15" fill="#2f9e44">D · INSTRUMENT &amp; PUBLIC DESK (Pillar 4 · on-chain)</text>
+<text x="2253" y="1279.5" font-size="15" fill="#2f9e44">ACRFutures.sol  (on-chain venue)</text>
+<text x="2253" y="1301.3" font-size="12" fill="#1e1e1e">weekly cash-settled vs oracle · stale-guard (7200s)</text>
+<text x="2253" y="1313.3" font-size="12" fill="#1e1e1e">maker mirrors every taker → net OI = 0 · 20% margin</text>
+<text x="2253" y="1325.3" font-size="12" fill="#1e1e1e">USDC collateral · Traded tape · socialized-loss settle</text>
+<text x="2253" y="1381.5" font-size="15" fill="#2f9e44">MARKET MAKER + VENUE KEEPER</text>
+<text x="2253" y="1402.4" font-size="11" fill="#1e1e1e">A–S: r = s − q·γ·σ²·(T−t) · inventory skews the curve</text>
+<text x="2253" y="1413.4" font-size="11" fill="#1e1e1e">keeper OWNS the venue (maker Circle wallet 0x9D44…)</text>
+<text x="2253" y="1424.4" font-size="11" fill="#1e1e1e">roll_if_needed opens next series onlyOwner · shape read from chain</text>
+<text x="2253" y="1483.5" font-size="15" fill="#2f9e44">PUBLIC DESK</text>
+<text x="2253" y="1505.3" font-size="12" fill="#1e1e1e">readers trade ACRFutures via Circle user-controlled wallet</text>
+<text x="2253" y="1517.3" font-size="12" fill="#1e1e1e">PIN ceremony · SCA · Gas-Station gas · no server key</text>
+<text x="2253" y="1529.3" font-size="12" fill="#1e1e1e">desk.py · /desk/* · per-identity rate-limited</text>
+<text x="718" y="1275.5" font-size="15" fill="#9c36b5">E · DISTRIBUTION (self-referential · x402-monetized)</text>
+<text x="738" y="1325.5" font-size="15" fill="#9c36b5">INDEX API (FastAPI)</text>
+<text x="738" y="1347.3" font-size="12" fill="#1e1e1e">x402-gated: /prints /curve /vol /futures</text>
+<text x="738" y="1359.3" font-size="12" fill="#1e1e1e">/desk/* /marketplace /webhooks /hedger /revenue</text>
+<text x="738" y="1371.3" font-size="12" fill="#1e1e1e">lifespan: refresh + poster + keeper + book warm</text>
+<text x="738" y="1383.3" font-size="12" fill="#1e1e1e">/onchain + futures readers (90s TTL)</text>
+<text x="1188" y="1325.5" font-size="15" fill="#9c36b5">x402 FACILITATOR</text>
+<text x="1188" y="1346.4" font-size="11" fill="#1e1e1e">Dev (mock) | Circle (Nanopayments)</text>
+<text x="1188" y="1357.4" font-size="11" fill="#1e1e1e">gateway-api.circle.com /v1/x402</text>
+<text x="1188" y="1368.4" font-size="11" fill="#1e1e1e">verify+settle · exact · x402Version 2 · fail-closed</text>
+<text x="1188" y="1379.4" font-size="11" fill="#1e1e1e">durable receipts_live.jsonl (in image) · /revenue rounded 6dp</text>
+<text x="1653" y="1325.5" font-size="15" fill="#9c36b5">ACR TERMINAL (Next.js · 'Arc Dawn')</text>
+<text x="1653" y="1348.2" font-size="13" fill="#1e1e1e">editorial 'The Fixing' · /curve /companion /developers</text>
+<text x="1653" y="1361.2" font-size="13" fill="#1e1e1e">/spend /traction · operator statement · beancount + audit</text>
+<text x="1653" y="1374.2" font-size="13" fill="#1e1e1e">PublicDesk · FuturesDesk · FuturesTape · QuoteCorridor</text>
+<text x="1653" y="1387.2" font-size="13" fill="#1e1e1e">ChainFactsStrip · OracleProvenance · FinalityBadge</text>
+<text x="1653" y="1400.2" font-size="13" fill="#1e1e1e">SWR live polling · apps/terminal</text>
+<text x="718" y="1655.5" font-size="15" fill="#9c36b5">K · AGENTIC ECONOMY (demand side · the loop closes)</text>
+<text x="738" y="1705.5" font-size="15" fill="#9c36b5">AGENT MARKETPLACE</text>
+<text x="738" y="1728.2" font-size="13" fill="#1e1e1e">/marketplace/catalog — Bazaar-shaped listings</text>
+<text x="738" y="1741.2" font-size="13" fill="#1e1e1e">/marketplace/receipts — paid-query ledger</text>
+<text x="738" y="1754.2" font-size="13" fill="#1e1e1e">the index listed as a payable service</text>
+<text x="738" y="1767.2" font-size="13" fill="#1e1e1e">marketplace.py</text>
+<text x="1188" y="1705.5" font-size="15" fill="#9c36b5">AUTONOMOUS x402 BUYER (live)</text>
+<text x="1188" y="1727.3" font-size="12" fill="#1e1e1e">apps/agent — TS · viem · GatewayPayer / Circle Gateway</text>
+<text x="1188" y="1739.3" font-size="12" fill="#1e1e1e">--live real settlements · USDC spend cap</text>
+<text x="1188" y="1751.3" font-size="12" fill="#1e1e1e">discovers catalog → pays per query → receipts.ts</text>
+<text x="1188" y="1763.3" font-size="12" fill="#1e1e1e">interop.ts (12-check) · x402-buy.yml</text>
+<text x="1653" y="1705.5" font-size="15" fill="#9c36b5">CIRCLE WEBHOOKS</text>
+<text x="1653" y="1728.2" font-size="13" fill="#1e1e1e">/webhooks/circle — settlement events</text>
+<text x="1653" y="1741.2" font-size="13" fill="#1e1e1e">P-256 (ECDSA) signature verified</text>
+<text x="1653" y="1754.2" font-size="13" fill="#1e1e1e">→ SettlementTape · in-app floor buyer /demo/buyer/*</text>
+<text x="1653" y="1767.2" font-size="13" fill="#1e1e1e">webhooks.py · buyer_demo.py</text>
+<text x="738" y="1893.5" font-size="15" fill="#9c36b5">AUTONOMOUS HEDGER — reads the rate, then trades on it</text>
+<text x="738" y="1915.3" font-size="12" fill="#1e1e1e">Circle agent wallet (no exportable key) · scripts/hedger.py · GET /hedger</text>
+<text x="738" y="1927.3" font-size="12" fill="#1e1e1e">1 pay x402 for ACR-INF print → 2 read own on-chain futures position</text>
+<text x="738" y="1939.3" font-size="12" fill="#1e1e1e">3 gap = mandate TARGET − position → 4 trade(qty) the difference</text>
+<text x="738" y="1951.3" font-size="12" fill="#1e1e1e">refuses on position-cap / book-room breach — never silently clamps</text>
+<text x="58" y="1175.5" font-size="15" fill="#e03131">G · RED TEAM / LIVE DEMO</text>
+<text x="73" y="1225.5" font-size="15" fill="#e03131">ATTACK THE INDEX  (5-step)</text>
+<text x="73" y="1248.2" font-size="13" fill="#1e1e1e">1  baseline: ACR printing hourly</text>
+<text x="73" y="1261.2" font-size="13" fill="#1e1e1e">2  unleash wash-flow bot</text>
+<text x="73" y="1274.2" font-size="13" fill="#1e1e1e">3  naive VWAP swings wildly</text>
+<text x="73" y="1287.2" font-size="13" fill="#1e1e1e">4  ACR barely moves</text>
+<text x="73" y="1300.2" font-size="13" fill="#1e1e1e">5  attack-cost counter burns USDC</text>
+<text x="73" y="1385.5" font-size="15" fill="#e03131">optimal_attack.py</text>
+<text x="73" y="1408.2" font-size="13" fill="#1e1e1e">runs the priced attack through real clean()</text>
+<text x="73" y="1421.2" font-size="13" fill="#1e1e1e">→ the bound is attainable, not loose</text>
+<text x="2238" y="1615.5" font-size="15" fill="#495057">H · VERIFICATION</text>
+<text x="2253" y="1665.5" font-size="15" fill="#495057">TESTS · 1759 py + 220 forge + 431 terminal + 35 agent</text>
+<text x="2253" y="1686.4" font-size="11" fill="#1e1e1e">6 CI jobs: python · contracts · agent · terminal · subgraph · mcp</text>
+<text x="2253" y="1697.4" font-size="11" fill="#1e1e1e">anvil-gated on-chain integration · eval gate</text>
+<text x="2253" y="1708.4" font-size="11" fill="#1e1e1e">workflows: heartbeat · lifecycle · recover · keepalive · x402-buy</text>
+<text x="2253" y="1719.4" font-size="11" fill="#1e1e1e">glossary gate · ruff · make deck · hermetic conftest (Circle mocked)</text>
+<text x="2853" y="343.5" font-size="15" fill="#f08c00">WHY A BENCHMARK (positioning)</text>
+<text x="2853" y="366.2" font-size="13" fill="#1e1e1e">ICE administers LIBOR via IBA — on Arc roster</text>
+<text x="2853" y="379.2" font-size="13" fill="#1e1e1e">Apollo · BNY · Mastercard: benchmark-native</text>
+<text x="2853" y="392.2" font-size="13" fill="#1e1e1e">SOFR was methodology-first, liquidity-second</text>
+<text x="2853" y="405.2" font-size="13" fill="#1e1e1e">the rate's administrator ≠ the rail's operator</text>
+<text x="2853" y="418.2" font-size="13" fill="#1e1e1e">(the LIBOR neutrality lesson = the moat)</text>
+<text x="2853" y="613.5" font-size="15" fill="#1e1e1e">LIVE ON ARC · MEASURED</text>
+<text x="2853" y="635.3" font-size="12" fill="#1e1e1e">Terminal (Vercel) · Seller API (Render) · chain 5042</text>
+<text x="2853" y="647.3" font-size="12" fill="#1e1e1e">ACROracle            0x4f00…2609</text>
+<text x="2853" y="659.3" font-size="12" fill="#1e1e1e">AttestationRegistry  0x23ae…dFb7</text>
+<text x="2853" y="671.3" font-size="12" fill="#1e1e1e">ACRFutures           0x29d9…42fe · self-rolling (series 3)</text>
+<text x="2853" y="683.3" font-size="12" fill="#1e1e1e">FeedAccessAttestor   0xe671…FD47</text>
+<text x="2853" y="695.3" font-size="12" fill="#1e1e1e">wallets by role: poster 0x8366… · owner+maker 0x9D44…</text>
+<text x="2853" y="707.3" font-size="12" fill="#1e1e1e">taker 0xc972… · readers user-controlled · hedger agent wallet</text>
+<text x="2853" y="719.3" font-size="12" fill="#1e1e1e">retired deploy EOA 0x3318…: holds no authority</text>
+<text x="2853" y="731.3" font-size="12" fill="#1e1e1e">real x402 settled via Circle Gateway · durable receipts</text>
+<text x="2853" y="743.3" font-size="12" fill="#1e1e1e">attack-cost-per-bp on EVERY print · 50–560× vs naive-VWAP</text>
+<text x="2853" y="755.3" font-size="12" fill="#1e1e1e">100% Foundry invariants passing</text>
+<text x="2853" y="767.3" font-size="12" fill="#1e1e1e">1759 py · 220 forge · 431 terminal · 35 agent — green</text>
+<text x="2858" y="1115.5" font-size="15" fill="#f08c00">PLAIN ENGLISH  ·  read the jargon</text>
+<text x="2864" y="1141.9" font-size="11" fill="#1e1e1e">latent price — the real price you can't see; ACR estimates it</text>
+<text x="2864" y="1152.9" font-size="11" fill="#1e1e1e">benchmark / rate — the official number contracts settle on (SOFR)</text>
+<text x="2864" y="1163.9" font-size="11" fill="#1e1e1e">VWAP — a plain volume-weighted average; fake volume fools it</text>
+<text x="2864" y="1174.9" font-size="11" fill="#1e1e1e">hedonic — strip quality gaps so you compare like-for-like</text>
+<text x="2864" y="1185.9" font-size="11" fill="#1e1e1e">constant-quality — price with quality removed; moves w/ the market</text>
+<text x="2864" y="1196.9" font-size="11" fill="#1e1e1e">observation model — 'what we see = true price, blurred + noisy'</text>
+<text x="2864" y="1207.9" font-size="11" fill="#1e1e1e">convolution / batching — settlements smear trades together in time</text>
+<text x="2864" y="1218.9" font-size="11" fill="#1e1e1e">deconvolution — un-smear it to recover the true price</text>
+<text x="2864" y="1229.9" font-size="11" fill="#1e1e1e">Kalman filter — recover a clean signal from noisy, delayed data</text>
+<text x="2864" y="1240.9" font-size="11" fill="#1e1e1e">RTS smoother — a backward pass that sharpens earlier estimates</text>
+<text x="2864" y="1251.9" font-size="11" fill="#1e1e1e">WLS — regression that weights bigger trades more heavily</text>
+<text x="2864" y="1262.9" font-size="11" fill="#1e1e1e">α-trim median (VWM) — drop the extreme few %, keep the middle</text>
+<text x="2864" y="1273.9" font-size="11" fill="#1e1e1e">bootstrap CI — resample to get an honest 'give-or-take' range</text>
+<text x="2864" y="1284.9" font-size="11" fill="#1e1e1e">sybil — many fake identities run by one attacker</text>
+<text x="2864" y="1295.9" font-size="11" fill="#1e1e1e">wash trade / self-deal — fake trades to pump volume or price</text>
+<text x="2864" y="1306.9" font-size="11" fill="#1e1e1e">Louvain — finds tight clusters in a who-paid-whom graph</text>
+<text x="2864" y="1317.9" font-size="11" fill="#1e1e1e">manipulation bound — least USDC (N*) to move the rate 1 bp</text>
+<text x="2864" y="1328.9" font-size="11" fill="#1e1e1e">basis point (bp) — one hundredth of a percent (0.01%)</text>
+<text x="2864" y="1339.9" font-size="11" fill="#1e1e1e">oracle — on-chain contract that publishes the rate to read</text>
+<text x="2864" y="1350.9" font-size="11" fill="#1e1e1e">postPrint / relayer — publish the rate; anyone may submit it</text>
+<text x="2864" y="1361.9" font-size="11" fill="#1e1e1e">role signer — each job (maker/taker/poster) signs from its own Circle wallet</text>
+<text x="2864" y="1372.9" font-size="11" fill="#1e1e1e">EIP-712 verify — contract checks WHO signed, not who sent it</text>
+<text x="2864" y="1383.9" font-size="11" fill="#1e1e1e">MAX_TS_SKEW / isStale — reject far-future or too-old prints</text>
+<text x="2864" y="1394.9" font-size="11" fill="#1e1e1e">nonce + deadline — one-time counter + expiry ⇒ replay-proof</text>
+<text x="2864" y="1405.9" font-size="11" fill="#1e1e1e">2-step ownership — new admin must accept ⇒ no wrong-address handoff</text>
+<text x="2864" y="1416.9" font-size="11" fill="#1e1e1e">Malachite finality — Arc confirms in &lt;1s and never reverses (no reorgs)</text>
+<text x="2864" y="1427.9" font-size="11" fill="#1e1e1e">EIP-3009 — pay by signing a message (no separate approval tx)</text>
+<text x="2864" y="1438.9" font-size="11" fill="#1e1e1e">x402 / Nanopayments — pay-per-call in sub-cent USDC (HTTP 402)</text>
+<text x="2864" y="1449.9" font-size="11" fill="#1e1e1e">facilitator /verify /settle — check the payment, then move the USDC</text>
+<text x="2864" y="1460.9" font-size="11" fill="#1e1e1e">fail-closed — if payment can't verify, deny (the safe default)</text>
+<text x="2864" y="1471.9" font-size="11" fill="#1e1e1e">Arc / USDC-gas — Circle's chain; fees are paid in USDC itself</text>
+<text x="2864" y="1482.9" font-size="11" fill="#1e1e1e">TapeSource — one data-in interface: SimSource | ArcSource</text>
+<text x="2864" y="1493.9" font-size="11" fill="#1e1e1e">/onchain reader — API serves the rate read straight from chain</text>
+<text x="2864" y="1504.9" font-size="11" fill="#1e1e1e">settlement-grade — trustworthy enough for contracts to settle on</text>
+<text x="2864" y="1515.9" font-size="11" fill="#1e1e1e">cash-settled future — bet on the rate; pays the diff, no delivery</text>
+<text x="2864" y="1526.9" font-size="11" fill="#1e1e1e">Avellaneda–Stoikov — a recipe for a market maker's buy/sell quotes</text>
+<text x="2864" y="1537.9" font-size="11" fill="#1e1e1e">ACRFutures — an on-chain weekly future, cash-settled vs the oracle</text>
+<text x="2864" y="1548.9" font-size="11" fill="#1e1e1e">initial margin — post ~20% collateral to hold a futures position</text>
+<text x="2864" y="1559.9" font-size="11" fill="#1e1e1e">maker mirror-side — one maker takes the opposite of every fill (net 0)</text>
+<text x="2864" y="1570.9" font-size="11" fill="#1e1e1e">socialized-loss — if a loser can't pay, winners are haircut pro-rata</text>
+<text x="2864" y="1581.9" font-size="11" fill="#1e1e1e">Public Desk — trade the future with a Circle user-controlled wallet</text>
+<text x="2864" y="1592.9" font-size="11" fill="#1e1e1e">user-controlled wallet — the user's own PIN/passkey keys; server has none</text>
+<text x="2864" y="1603.9" font-size="11" fill="#1e1e1e">Agent Marketplace — catalog of payable services + receipts ledger</text>
+<text x="2864" y="1614.9" font-size="11" fill="#1e1e1e">meta-attestation (attestWithSig) — seller signs, a relayer pays gas</text>
+<text x="2864" y="1625.9" font-size="11" fill="#1e1e1e">Circle wallet / SCP — custodial signer + on-chain deploy platform</text>
+<text x="2864" y="1636.9" font-size="11" fill="#1e1e1e">webhook — Circle pings the API when a settlement lands</text>
+<text x="2864" y="1647.9" font-size="11" fill="#1e1e1e">SWR — the Terminal auto-refreshes its data every few seconds</text>
+<text x="2864" y="1658.9" font-size="11" fill="#1e1e1e">autonomous hedger — an agent that buys the rate, then trades futures on it</text>
+<text x="2864" y="1669.9" font-size="11" fill="#1e1e1e">agent wallet — a Circle wallet an agent signs with; no exportable key</text>
+<text x="2864" y="1680.9" font-size="11" fill="#1e1e1e">self-rolling venue — the futures book opens its own next series (it owns itself)</text>
+<text x="2864" y="1691.9" font-size="11" fill="#1e1e1e">venue keeper — the loop that trades + rolls the book, reading its shape on-chain</text>
+<text x="2864" y="1702.9" font-size="11" fill="#1e1e1e">FeedAccessAttestor — on-chain proof a wallet paid for the feed (hasFeedAccess)</text>
+<text x="2864" y="1713.9" font-size="11" fill="#1e1e1e">durable receipts — the settlement ledger ships in the image; survives restarts</text>
+<text x="2864" y="1871.5" font-size="10.5" fill="#495057">full glossary (every term) → docs/GLOSSARY.md</text>
+<text x="58" y="2085.5" font-size="15" fill="#0c8599">F · WHY ARC — load-bearing for the MATH, not the deployment    ·    chain 5042 · USDC = native gas token</text>
+<text x="73" y="2158.5" font-size="15" fill="#0c8599">ARC L1 (Malachite)</text>
+<text x="73" y="2181.2" font-size="13" fill="#1e1e1e">deterministic sub-second finality · no reorgs</text>
+<text x="73" y="2194.2" font-size="13" fill="#1e1e1e">chain 5042 · rpc.mainnet.arc.io</text>
+<text x="639" y="2158.5" font-size="15" fill="#0c8599">CIRCLE GATEWAY</text>
+<text x="639" y="2181.2" font-size="13" fill="#1e1e1e">single canonical rail</text>
+<text x="639" y="2194.2" font-size="13" fill="#1e1e1e">= complete observation, no selection bias</text>
+<text x="1205" y="2158.5" font-size="15" fill="#0c8599">NANOPAYMENTS (x402)</text>
+<text x="1205" y="2181.2" font-size="13" fill="#1e1e1e">sub-cent index monetization</text>
+<text x="1205" y="2194.2" font-size="13" fill="#1e1e1e">agents are the paying customers</text>
+<text x="1771" y="2158.5" font-size="15" fill="#0c8599">USDC NUMERAIRE</text>
+<text x="1771" y="2181.2" font-size="13" fill="#1e1e1e">native system contract 0x3600… = gas token</text>
+<text x="1771" y="2194.2" font-size="13" fill="#1e1e1e">no deflator · no Paymaster (gasless intrinsic)</text>
+<text x="2337" y="2158.5" font-size="15" fill="#0c8599">DETERMINISTIC USDC FEES</text>
+<text x="2337" y="2181.2" font-size="13" fill="#1e1e1e">wash volume has a known, fixed cost</text>
+<text x="2337" y="2194.2" font-size="13" fill="#1e1e1e">→ the manipulation bound is a NUMBER</text>
+<text x="2903" y="2158.5" font-size="15" fill="#0c8599">AGENT MARKETPLACE</text>
+<text x="2903" y="2181.2" font-size="13" fill="#1e1e1e">ACR listed as a payable service</text>
+<text x="2903" y="2194.2" font-size="13" fill="#1e1e1e">agents discover + pay natively (Zone K)</text>
+<text x="58" y="2745.5" font-size="15" fill="#1971c2">T · MACHINE TCA · a person, not a wallet, is the unit    ·    Arc + The Graph + World</text>
+<text x="73" y="2818.5" font-size="15" fill="#e8590c">ReceiptMirror.sol · HumanIdMirror.sol · ACROracleV2.sol</text>
+<text x="73" y="2840.3" font-size="12" fill="#1e1e1e">0xA9CD…DB65  every x402 settlement, mirrored on Arc</text>
+<text x="73" y="2852.3" font-size="12" fill="#1e1e1e">0x7f41…d8e5  which wallets are ONE person, per 7-day window</text>
+<text x="73" y="2864.3" font-size="12" fill="#1e1e1e">  cluster = keccak(nullifier, salt, window) — never a World ID</text>
+<text x="73" y="2876.3" font-size="12" fill="#1e1e1e">0xFCa0…FFEA  v2 print: policyHash + humanAdjustedBound</text>
+<text x="73" y="2888.3" font-size="12" fill="#1e1e1e">monotone per-payer guard · salt committed on chain</text>
+<text x="643" y="2818.5" font-size="15" fill="#0c8599">acr-tape SUBGRAPH (The Graph · Studio ethonline v0.2.0)</text>
+<text x="643" y="2840.3" font-size="12" fill="#1e1e1e">7 data sources on arc (mainnet) · ~3 s behind head</text>
+<text x="643" y="2852.3" font-size="12" fill="#1e1e1e">Settlement.slippageBp benchmarked IN THE MAPPING</text>
+<text x="643" y="2864.3" font-size="12" fill="#1e1e1e">  vs the arrival print, at the settling block</text>
+<text x="643" y="2876.3" font-size="12" fill="#1e1e1e">Settlement.human · SellerDay / PayerDay · SellerWindow</text>
+<text x="643" y="2888.3" font-size="12" fill="#1e1e1e">graph/ · 58 matchstick tests · no Substreams on Arc (stated)</text>
+<text x="1213" y="2818.5" font-size="15" fill="#1971c2">MACHINE TCA · RATINGS · REROUTE</text>
+<text x="1213" y="2840.3" font-size="12" fill="#1e1e1e">/tca/{payer}  vw slippage · overpaid · by_seller · human_share</text>
+<text x="1213" y="2852.3" font-size="12" fill="#1e1e1e">/rating/{seller}  fairness · human depth · weight_covered_pct</text>
+<text x="1213" y="2864.3" font-size="12" fill="#1e1e1e">/tca/human  one card across EVERY wallet a person owns</text>
+<text x="1213" y="2876.3" font-size="12" fill="#1e1e1e">reroute: worst → best seller, saving in bp on past fills</text>
+<text x="1213" y="2888.3" font-size="12" fill="#1e1e1e">make recompute  re-derive the index from the indexed tape</text>
+<text x="1783" y="2818.5" font-size="15" fill="#9c36b5">AGENT GATE + MODEL ARMOR</text>
+<text x="1783" y="2840.3" font-size="12" fill="#1e1e1e">AGENT-CARD: EIP-712, no verifyingContract, audience + 15-min TTL</text>
+<text x="1783" y="2852.3" font-size="12" fill="#1e1e1e">three tiers: anonymous (host) · carded (key) · human (cluster)</text>
+<text x="1783" y="2864.3" font-size="12" fill="#1e1e1e">human claim confirmed on HumanIdMirror or 401, never a downgrade</text>
+<text x="1783" y="2876.3" font-size="12" fill="#1e1e1e">Google Cloud Model Armor on carded /graph/query, both directions</text>
+<text x="1783" y="2888.3" font-size="12" fill="#1e1e1e">the tier rides on the RECEIPT and the settlement ticker</text>
+<text x="2353" y="2818.5" font-size="15" fill="#f08c00">WORLD · HUMANS, NOT WALLETS</text>
+<text x="2353" y="2840.3" font-size="12" fill="#1e1e1e">HUMAN-PROOF: CAIP-122 signature → AgentBook → cluster</text>
+<text x="2353" y="2852.3" font-size="12" fill="#1e1e1e">make prove-human  runnable by anyone, nothing secret</text>
+<text x="2353" y="2864.3" font-size="12" fill="#1e1e1e">humanAdjustedBound: sybils are free, people are not</text>
+<text x="2353" y="2876.3" font-size="12" fill="#1e1e1e">Sandbox identities flagged onto chain + every count</text>
+<text x="2353" y="2888.3" font-size="12" fill="#1e1e1e">rotation chore on /ops · resolutions expire weekly</text>
+<text x="2923" y="2818.5" font-size="15" fill="#9c36b5">THE LOOP CLOSES · apps/agent --reroute · MCP</text>
+<text x="2923" y="2840.3" font-size="12" fill="#1e1e1e">buyer reads ITS OWN /tca before paying</text>
+<text x="2923" y="2852.3" font-size="12" fill="#1e1e1e">drops the worst seller, pays the suggested one first</text>
+<text x="2923" y="2864.3" font-size="12" fill="#1e1e1e">Circle Gateway nanopayment → ReceiptMirror → subgraph → /tca</text>
+<text x="2923" y="2876.3" font-size="12" fill="#1e1e1e">mcp/: 11 tools (check_spend · spend_report · wallet_tca('me'))</text>
+<text x="2923" y="2888.3" font-size="12" fill="#1e1e1e">skills/acr-analyst: Ask the Tape, in English</text>
+<text x="58" y="3105.5" font-size="15" fill="#495057">7-WEEK EXECUTION — cut lines: hedonic → class-buckets · future → paper-traded · NEVER cut W4 adoption or the paper</text>
+<text x="73" y="3173.5" font-size="15" fill="#495057">W1 — TAPE</text>
+<text x="73" y="3196.2" font-size="13" fill="#1e1e1e">indexer live on Arc mainnet</text>
+<text x="73" y="3209.2" font-size="13" fill="#1e1e1e">empirical batching study</text>
+<text x="73" y="3222.2" font-size="13" fill="#1e1e1e">OSS: microstructure paper</text>
+<text x="559" y="3173.5" font-size="15" fill="#495057">W2 — ESTIMATOR v1</text>
+<text x="559" y="3196.2" font-size="13" fill="#1e1e1e">state-space filter</text>
+<text x="559" y="3209.2" font-size="13" fill="#1e1e1e">trimmed VWM + first prints</text>
+<text x="559" y="3222.2" font-size="13" fill="#1e1e1e">METHODOLOGY PAPER out</text>
+<text x="1045" y="3173.5" font-size="15" fill="#495057">W3 — ON-CHAIN</text>
+<text x="1045" y="3196.2" font-size="13" fill="#1e1e1e">AttestationRegistry +</text>
+<text x="1045" y="3209.2" font-size="13" fill="#1e1e1e">ACROracle contracts</text>
+<text x="1045" y="3222.2" font-size="13" fill="#1e1e1e">full invariant suite</text>
+<text x="1531" y="3173.5" font-size="15" fill="#e8590c">W4 — ADOPTION ★</text>
+<text x="1531" y="3196.2" font-size="13" fill="#1e1e1e">sellers attest metadata</text>
+<text x="1531" y="3209.2" font-size="13" fill="#1e1e1e">x402 index API live</text>
+<text x="1531" y="3222.2" font-size="13" fill="#1e1e1e">oracle consumed by partners</text>
+<text x="2017" y="3173.5" font-size="15" fill="#495057">W5 — RED TEAM</text>
+<text x="2017" y="3196.2" font-size="13" fill="#1e1e1e">manipulation bound derived</text>
+<text x="2017" y="3209.2" font-size="13" fill="#1e1e1e">attack own index (wash bots)</text>
+<text x="2017" y="3222.2" font-size="13" fill="#1e1e1e">publish attack-cost/bp</text>
+<text x="2503" y="3173.5" font-size="15" fill="#495057">W6 — INSTRUMENT</text>
+<text x="2503" y="3196.2" font-size="13" fill="#1e1e1e">weekly cash-settled future</text>
+<text x="2503" y="3209.2" font-size="13" fill="#1e1e1e">A-S MM quoting live</text>
+<text x="2503" y="3222.2" font-size="13" fill="#1e1e1e">Mission Control trading</text>
+<text x="2989" y="3173.5" font-size="15" fill="#495057">W7 — SHIP</text>
+<text x="2989" y="3196.2" font-size="13" fill="#1e1e1e">freeze Monday</text>
+<text x="2989" y="3209.2" font-size="13" fill="#1e1e1e">paper polish + rehearse</text>
+<text x="2989" y="3222.2" font-size="13" fill="#1e1e1e">attack demo twice</text>
+</svg>

@@ -1,0 +1,28 @@
+# Keep the build context to exactly what the Dockerfile COPYs: the uv
+# workspace (pyproject/uv.lock/Readme + packages/ + services/) and nothing
+# secret-bearing (.env, data/) even by accident.
+.git
+.venv
+.env
+.env.*
+data/
+apps/
+contracts/
+docs/
+scripts/
+redteam/
+tests/
+.github/
+.claude/
+node_modules/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+*.excalidraw
+*.tsbuildinfo
+*.parquet
+.DS_Store
+Dockerfile
+.dockerignore
+hackathon/

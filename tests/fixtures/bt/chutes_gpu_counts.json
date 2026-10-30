@@ -1,0 +1,78 @@
+[
+  {
+    "chute_id": "0754972a-019d-5d9e-bfc3-fb1c8e8df36c",
+    "gpu_count": 1
+  },
+  {
+    "chute_id": "08901219-159f-55a7-87cf-9d0d02744668",
+    "gpu_count": 8
+  },
+  {
+    "chute_id": "0bb5d4c2-b5da-587d-b88e-62b4839028ec",
+    "gpu_count": 8
+  },
+  {
+    "chute_id": "21d129e5-8426-5c29-a6be-844e0f5f5e30",
+    "gpu_count": 8
+  },
+  {
+    "chute_id": "30c4df18-5d3a-5c9c-9ef1-1b2f5e72b372",
+    "gpu_count": 1
+  },
+  {
+    "chute_id": "398651e1-5f85-5e50-a513-7c5324e8e839",
+    "gpu_count": 8
+  },
+  {
+    "chute_id": "3b7315e8-84f9-5168-9840-2a62eb23b4aa",
+    "gpu_count": 1
+  },
+  {
+    "chute_id": "42ee92ba-a537-5a73-8741-876067750db7",
+    "gpu_count": 1
+  },
+  {
+    "chute_id": "51a4284a-a5a0-5e44-a9cc-6af5a2abfbcf",
+    "gpu_count": 8
+  },
+  {
+    "chute_id": "5f5b67f2-139e-5857-bdfb-94a30e03a526",
+    "gpu_count": 1
+  },
+  {
+    "chute_id": "761ccdab-2e3d-5268-ab03-55f8ba94a80c",
+    "gpu_count": 1
+  },
+  {
+    "chute_id": "7725a31d-28df-5bb7-9d29-c23b49df5472",
+    "gpu_count": 1
+  },
+  {
+    "chute_id": "7aa5e899-c0ba-5482-af48-d3f31d635c9f",
+    "gpu_count": 8
+  },
+  {
+    "chute_id": "9ecb73cc-909b-5334-9cd8-74985945cff5",
+    "gpu_count": 1
+  },
+  {
+    "chute_id": "aac09863-35b4-5d9b-9b67-6e6a9d54273a",
+    "gpu_count": 8
+  },
+  {
+    "chute_id": "ac059e33-eb27-541c-b9a9-24b214036475",
+    "gpu_count": 8
+  },
+  {
+    "chute_id": "b048fe26-0352-5c46-acf7-335e527e7f3d",
+    "gpu_count": 8
+  },
+  {
+    "chute_id": "b4d58772-e72b-55d1-9d73-d30dff6d2ed8",
+    "gpu_count": 8
+  },
+  {
+    "chute_id": "bad4b718-d7ab-516a-a8a9-3f833d8250ff",
+    "gpu_count": 1
+  }
+]

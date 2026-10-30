@@ -1,0 +1,69 @@
+{
+  "_": "Conformance vectors for acr_oracle_client.policy.decision_hash.",
+  "scheme": "keccak256(b\"acr.decision::\" + json.dumps(record, sort_keys=True, separators=(\",\",\":\"), ensure_ascii=False, default=str))",
+  "warning": "DO NOT REIMPLEMENT THIS IN ANOTHER LANGUAGE. Python renders a whole-valued float as 10.0 and JavaScript renders it as 10, and from JSON alone a reimplementation cannot tell which fields are floats. Call the Python helper, or ask ACR for the hash. These vectors exist to prove a mismatch loudly if anyone tries.",
+  "unhashed_fields": [
+    "tx",
+    "paid_usdc",
+    "warns_signature"
+  ],
+  "vectors": [
+    {
+      "name": "whole-valued floats",
+      "why": "python emits 10.0, JSON.stringify emits 10 — the measured divergence",
+      "record": {
+        "at": 1791801414.0,
+        "billed_usdc": 0.02,
+        "metered_quantity": 10.0,
+        "vendor_quantity": 10.0,
+        "vendor": "0xefe0E4625AFf072c3FCff230b47f8150A17aDF19"
+      },
+      "hash": "0xe801947ce5e9354ba95e1b4d395faf78be3c3d3af02ceaebfa15c475fab400b6"
+    },
+    {
+      "name": "none is not absent",
+      "why": "a null field is part of the record; dropping it is a different record",
+      "record": {
+        "at": 1.5,
+        "over_par_bp": null,
+        "saving_usdc": null,
+        "notes": []
+      },
+      "hash": "0x873ffda0f968e9e22e9bf36f4a153384997822763015340c35d629c9059f8b9c"
+    },
+    {
+      "name": "non-ascii is not escaped",
+      "why": "ensure_ascii=False, so the bytes are UTF-8 and not \\uXXXX",
+      "record": {
+        "vendor": "Acé Compute GmbH",
+        "note": "café — münchen"
+      },
+      "hash": "0x77705fda7ba9fad5c81acbd9fa967f5608e3d7f34dbeabaaee9aaba595cefeaa"
+    },
+    {
+      "name": "key order is sorted, not insertion",
+      "why": "two dicts differing only in insertion order must hash the same",
+      "record": {
+        "zeta": 1,
+        "alpha": 2,
+        "mid": 3
+      },
+      "hash": "0xb103b3a0d3bb59605c346a4e9f6f4e9d890208ca1b48c15168e18072ff400bdd"
+    },
+    {
+      "name": "small decimals keep every place",
+      "why": "0.004410 is the real agent payment; trailing zeros are significant in the string",
+      "record": {
+        "billed_usdc": 0.00441,
+        "paid_to": "0x1547B0d3C334F264D28B087566B512AB5CD85379"
+      },
+      "hash": "0x4e2f53b7e3ddd547b5218b34b4bef5b00567a6cebed5630b19842e97f82973e6"
+    },
+    {
+      "name": "empty record",
+      "why": "the degenerate case, so a reimplementation cannot special-case it away",
+      "record": {},
+      "hash": "0x45203e471fa7d8d8d467d34f1eb697758a9812ed805b79e63181c986bc12bcfc"
+    }
+  ]
+}

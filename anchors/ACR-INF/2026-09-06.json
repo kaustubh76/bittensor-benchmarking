@@ -1,0 +1,178 @@
+{
+  "aggregate": {
+    "max": 0.0007,
+    "min": 0.0002625,
+    "n": 6,
+    "n_requested": 10,
+    "p25": 0.00037,
+    "p75": 0.0005000000000000001,
+    "spread_ratio": 2.666666666666667,
+    "value": 0.00043125
+  },
+  "basket_version": 1,
+  "ceiling": {
+    "note": "measured value plus 15%",
+    "ratio": 1333.3,
+    "set_at": "2026-09-06"
+  },
+  "fetched_at": "2026-09-06T11:31:58+00:00",
+  "gap": {
+    "direction": "reference_above_market",
+    "ratio": 1159.4202898550725
+  },
+  "index_id": "ACR-INF",
+  "missing": [
+    {
+      "id": "anthropic/claude-3.5-haiku",
+      "reason": "absent from catalogue or unpriced"
+    },
+    {
+      "id": "google/gemini-flash-1.5",
+      "reason": "absent from catalogue or unpriced"
+    },
+    {
+      "id": "google/gemini-2.0-flash-001",
+      "reason": "absent from catalogue or unpriced"
+    },
+    {
+      "id": "mistralai/mistral-small",
+      "reason": "absent from catalogue or unpriced"
+    }
+  ],
+  "provenance": {
+    "n_models_in_catalogue": 431,
+    "n_models_priced": 431,
+    "response_sha256": "0xf4a29559444b7191f4b527f23d0d38ae28cd0058eac661dd7fc548f858be31a1"
+  },
+  "reference_level": 0.5,
+  "rows": [
+    {
+      "id": "openai/gpt-4o-mini",
+      "label": "GPT-4o mini",
+      "price_usd_per_unit": 0.0002625,
+      "quality": {
+        "model_class": "mid"
+      },
+      "raw": {
+        "completion": "0.0000006",
+        "input_cache_read": "0.000000075",
+        "prompt": "0.00000015"
+      },
+      "source": {
+        "json_path": "data[id=openai/gpt-4o-mini].pricing",
+        "kind": "http",
+        "retrieved_at": "2026-09-06T11:31:58+00:00",
+        "url": "https://openrouter.ai/api/v1/models"
+      }
+    },
+    {
+      "id": "openai/gpt-4.1-mini",
+      "label": "GPT-4.1 mini",
+      "price_usd_per_unit": 0.0007,
+      "quality": {
+        "model_class": "mid"
+      },
+      "raw": {
+        "completion": "0.0000016",
+        "input_cache_read": "0.0000001",
+        "prompt": "0.0000004",
+        "web_search": "0.01"
+      },
+      "source": {
+        "json_path": "data[id=openai/gpt-4.1-mini].pricing",
+        "kind": "http",
+        "retrieved_at": "2026-09-06T11:31:58+00:00",
+        "url": "https://openrouter.ai/api/v1/models"
+      }
+    },
+    {
+      "id": "anthropic/claude-3-haiku",
+      "label": "Claude 3 Haiku",
+      "price_usd_per_unit": 0.0005000000000000001,
+      "quality": {
+        "model_class": "mid"
+      },
+      "raw": {
+        "completion": "0.00000125",
+        "input_cache_read": "0.00000003",
+        "input_cache_write": "0.0000003",
+        "input_cache_write_1h": "0.0000005",
+        "prompt": "0.00000025",
+        "web_search": "0.01"
+      },
+      "source": {
+        "json_path": "data[id=anthropic/claude-3-haiku].pricing",
+        "kind": "http",
+        "retrieved_at": "2026-09-06T11:31:58+00:00",
+        "url": "https://openrouter.ai/api/v1/models"
+      }
+    },
+    {
+      "id": "meta-llama/llama-3.1-70b-instruct",
+      "label": "Llama 3.1 70B",
+      "price_usd_per_unit": 0.00039999999999999996,
+      "quality": {
+        "model_class": "mid"
+      },
+      "raw": {
+        "completion": "0.0000004",
+        "prompt": "0.0000004"
+      },
+      "source": {
+        "json_path": "data[id=meta-llama/llama-3.1-70b-instruct].pricing",
+        "kind": "http",
+        "retrieved_at": "2026-09-06T11:31:58+00:00",
+        "url": "https://openrouter.ai/api/v1/models"
+      }
+    },
+    {
+      "id": "deepseek/deepseek-chat",
+      "label": "DeepSeek Chat",
+      "price_usd_per_unit": 0.0004625,
+      "quality": {
+        "model_class": "mid"
+      },
+      "raw": {
+        "completion": "0.00000089",
+        "prompt": "0.00000032"
+      },
+      "source": {
+        "json_path": "data[id=deepseek/deepseek-chat].pricing",
+        "kind": "http",
+        "retrieved_at": "2026-09-06T11:31:58+00:00",
+        "url": "https://openrouter.ai/api/v1/models"
+      }
+    },
+    {
+      "id": "qwen/qwen-2.5-72b-instruct",
+      "label": "Qwen 2.5 72B",
+      "price_usd_per_unit": 0.00037,
+      "quality": {
+        "model_class": "mid"
+      },
+      "raw": {
+        "completion": "0.0000004",
+        "prompt": "0.00000036"
+      },
+      "source": {
+        "json_path": "data[id=qwen/qwen-2.5-72b-instruct].pricing",
+        "kind": "http",
+        "retrieved_at": "2026-09-06T11:31:58+00:00",
+        "url": "https://openrouter.ai/api/v1/models"
+      }
+    }
+  ],
+  "schema": "acr.anchor/1",
+  "selection": {
+    "aggregate": "median",
+    "blend": {
+      "completion": 0.25,
+      "prompt": 0.75
+    },
+    "blend_note": "A 75/25 prompt:completion blend approximates a read-heavy agent workload. Stated because the aggregate is a function of this choice: the same catalogue gives a ~1000x gap prompt-only and ~588x blended.",
+    "trim": 0.0,
+    "unit_conversion": "usd_per_token * 1000"
+  },
+  "tool_version": 1,
+  "unit": "$/1k tokens"
+}

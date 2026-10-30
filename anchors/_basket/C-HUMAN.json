@@ -1,0 +1,32 @@
+{
+  "schema": "acr.basket/1",
+  "version": 1,
+  "index_id": "C-HUMAN",
+  "unit": "$/human",
+  "quantity": "The cost to an ATTACKER of CONTROLLING one verified human identity they do not own — renting or buying access to somebody else's verified account.",
+  "note": "Read the quantity line first, because the natural reading is the wrong one. This is NOT the price of obtaining a World ID: Orb verification is free to the person who gets it, and a basket that measured that would be measuring zero. The number that bounds an attack is what it costs to control identities belonging to other people, which is a black-market rate rather than a list price. The two differ by orders of magnitude and not in a predictable direction, so conflating them is not conservative — it is simply wrong.\n\nThis basket exists because C_human scales the entire human-denominated manipulation bound, and an unsourced constant that scales everything is exactly the failure `reference_level` turned out to be: plausible in a config file, uncited, and 20-1159x off once anybody measured it (anchors/GAP.md). Putting it here rather than in human_caps.py means it cannot be edited silently.",
+  "source": { "kind": "curated", "auth": "none" },
+  "status": "unsourced",
+  "finding": "No citable market rate was found for controlling a verified World ID identity. Account-rental markets for verified identities are not publicly priced in a form that can be quoted with a URL and a date, and a figure invented to look sourced would be worse than none. So this basket carries a deliberately LOW floor instead of an estimate, and everything derived from it is published as a lower bound.",
+  "rule": {
+    "aggregate": "floor",
+    "floor_usd": 10.0,
+    "note": "A floor, not an estimate. Chosen to sit well below any plausible real rate so the derived bound understates rather than overstates: if the true cost is higher, an attack is dearer than we claim, never cheaper. Understating a manipulation cost can only make the benchmark look weaker than it is, which is the safe direction for a number nobody can yet cite. Raise this only by adding cited rows below and changing `aggregate`."
+  },
+  "rows": [],
+  "excluded": [
+    {
+      "id": "world/orb-verification",
+      "label": "World ID Orb verification",
+      "usd_per_human": 0.0,
+      "url": "https://world.org/world-id",
+      "reason": "free to the person verifying, and therefore not the attacker's cost. Recorded as a market fact a reader should know rather than dropped, because its absence from the basket is itself a claim that needs stating."
+    }
+  ],
+  "missing": [
+    {
+      "id": "account-rental/verified-identity",
+      "reason": "no public, quotable price for renting or purchasing control of a verified identity"
+    }
+  ]
+}

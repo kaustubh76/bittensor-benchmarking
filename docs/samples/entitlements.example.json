@@ -1,0 +1,56 @@
+{
+  "_comment": [
+    "Bills a vendor sent us, and what our own meter says actually happened.",
+    "This is the whole of what a new customer has to hand over to be operated",
+    "for: an export of what they are billed and what they use. No keys, no",
+    "treasury access, no custody — a business with no `policy_wallet` is a",
+    "first-class case, and the registry calls it 'what an evaluation looks like'.",
+    "",
+    "`used_quantity` ABSENT means we could not check, which is never the same as",
+    "zero: zero would assert the entitlement went unused and make every bill look",
+    "fraudulent. The agent escalates instead of accusing.",
+    "",
+    "The period comes from the BILL. A window taken from the clock mints a new id",
+    "every run, so the same charge gets paid again and again.",
+    "",
+    "Run: uv run python scripts/operator_run.py --business acme --entitlements docs/samples/entitlements.example.json"
+  ],
+  "bills": [
+    {
+      "payee": "0x5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e",
+      "resource": "/saas/seats",
+      "unit": "seat-month",
+      "billed_usdc": 100.0,
+      "billed_quantity": 50.0,
+      "used_quantity": 12.0,
+      "period_start": 1788308000.0,
+      "period_end": 1790896400.0,
+      "invoice_ref": "VENDOR-1001",
+      "due_at": 1791500000.0,
+      "note": "Fifty seats billed, twelve opened. The agoranomos case."
+    },
+    {
+      "payee": "0x6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f",
+      "resource": "/saas/observability",
+      "unit": "GB-month",
+      "billed_usdc": 40.0,
+      "billed_quantity": 200.0,
+      "used_quantity": 198.0,
+      "period_start": 1788308000.0,
+      "period_end": 1790896400.0,
+      "invoice_ref": "VENDOR-2002",
+      "note": "Used almost exactly what was billed — inside the meter's tolerance."
+    },
+    {
+      "payee": "0x7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a",
+      "resource": "/saas/legacy-crm",
+      "unit": "seat-month",
+      "billed_usdc": 75.0,
+      "billed_quantity": 25.0,
+      "period_start": 1788308000.0,
+      "period_end": 1790896400.0,
+      "invoice_ref": "VENDOR-3003",
+      "note": "No usage export from this vendor at all: `used_quantity` is absent, so the agent asks rather than accuses."
+    }
+  ]
+}

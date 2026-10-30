@@ -1,0 +1,91 @@
+{
+  "schema": "acr.basket/1",
+  "version": 2,
+  "index_id": "ACR-GPU",
+  "unit": "$/GPU-sec",
+  "note": "Published on-demand rate cards, plus live prices from Bittensor subnet 51 (Lium). Until 2026-10-29 this basket said no GPU cloud published a clean unauthenticated price JSON; that is no longer true \u2014 https://lium.io/api/executors serves every executor with its price, tier and accelerator model, no key. Those rows are now fetched over HTTP; the rate-card rows stay curated, each carrying the URL a human can check, because they are the comparison set a reader expects to see. On-demand only: spot and marketplace bids are a different product with a different risk, and mixing them would make the aggregate a blend of two markets \u2014 Lium labels these `tier`, and 36 of 130 executors were spot and excluded. Datacenter accelerators only, which is the same rule `rule.note` has always stated: including Lium's consumer RTX cards would take the basket to 94 rows with a 44x spread and a 49.5x gap, and a basket whose rows span 44x has no single price. That number is disclosed here rather than buried, because excluding rows is exactly the move a reader should be able to check.",
+  "source": {
+    "kind": "mixed",
+    "auth": "none",
+    "http": "https://lium.io/api/executors"
+  },
+  "rule": {
+    "aggregate": "median",
+    "trim": 0.0,
+    "min_priced": 10,
+    "min_priced_note": "How many rows must actually carry a price. A ratchet, like the anchor's own `ceiling`: the basket has thinned before, ACR-INF going from 6 to 5 priced of 10 requested with no signal anywhere, and `par.Basket.usable` sends a stranger's bill to the FLEET scale once a basket stops being usable \u2014 a scale anchors/GAP.md puts 10x to 1250x off market. Lower it deliberately in a commit, or fix the fetch. Raised 4 \u2192 10 on 2026-10-29, in the same change as the fetch that first priced the six Lium accelerator classes: a floor left at 4 would have let the Bittensor rows vanish silently and re-medianed the four rate cards as if nothing had changed.",
+    "unit_conversion": "usd_per_gpu_hour / 3600",
+    "note": "Median across providers for a comparable accelerator tier.",
+    "lium_tier": "secure",
+    "lium_accelerators": [
+      "H100",
+      "H200",
+      "B200",
+      "B300"
+    ],
+    "lium_min_executors": 2,
+    "lium_max_thin": 2,
+    "lium_thin_note": "A class priced off fewer than `lium_min_executors` secure executors is marked `quality.thin` in the anchor and counted in `provenance.n_accelerator_classes_thin`; `lium_max_thin` is how many of the six classes may be thin before `--check` fails. A median over one executor is that executor's ASK, and SN51 inventory is ~93% idle, so this is a real and recurring condition rather than an outage: `NVIDIA H200 NVL` was already at n=1 in the 2026-10-29 anchor, and `NVIDIA H100 80GB HBM3` went 6 to 1 inside 24h on 2026-10-30. The thin row is still PRICED on purpose -- dropping it would put the basket under `min_priced` above, which flips `par.Basket.usable` and reprices an outsider's bill onto the fleet's own quotes, 10x to 1250x off market by anchors/GAP.md. One disclosed thin row inside a ten-row median is a far smaller error than that. Ceiling set at 2 (measured 1 at the 2026-10-29 anchor, 2 live the next day); lower it deliberately in a commit.",
+    "lium_note": "`lium_tier` is the on-demand product; `lium_accelerators` is the substring set that defines 'comparable tier'. Both are declared here rather than hard-coded in scripts/anchors.py so a reader can see what was included without reading the fetcher."
+  },
+  "rows": [
+    {
+      "id": "runpod/h100-pcie",
+      "label": "RunPod H100 PCIe (community)",
+      "usd_per_gpu_hour": 1.99,
+      "url": "https://www.runpod.io/pricing",
+      "quoted": "H100 PCIe $1.99/hr"
+    },
+    {
+      "id": "lambda/h100-sxm",
+      "label": "Lambda H100 SXM on-demand",
+      "usd_per_gpu_hour": 3.99,
+      "url": "https://lambda.ai/service/gpu-cloud",
+      "quoted": "H100 SXM $3.99/GPU-hour"
+    },
+    {
+      "id": "runpod/a100-pcie",
+      "label": "RunPod A100 PCIe",
+      "usd_per_gpu_hour": 1.19,
+      "url": "https://www.runpod.io/pricing",
+      "quoted": "A100 PCIe $1.19/hr"
+    },
+    {
+      "id": "lambda/a100-40gb",
+      "label": "Lambda A100 40GB on-demand",
+      "usd_per_gpu_hour": 1.99,
+      "url": "https://lambda.ai/service/gpu-cloud",
+      "quoted": "A100 40GB $1.99/hr"
+    },
+    {
+      "id": "lium/h100-80gb-hbm3",
+      "label": "Lium H100 80GB HBM3 (Bittensor SN51)",
+      "machine_name": "NVIDIA H100 80GB HBM3"
+    },
+    {
+      "id": "lium/h200",
+      "label": "Lium H200 (Bittensor SN51)",
+      "machine_name": "NVIDIA H200"
+    },
+    {
+      "id": "lium/h200-nvl",
+      "label": "Lium H200 NVL (Bittensor SN51)",
+      "machine_name": "NVIDIA H200 NVL"
+    },
+    {
+      "id": "lium/b200",
+      "label": "Lium B200 (Bittensor SN51)",
+      "machine_name": "NVIDIA B200"
+    },
+    {
+      "id": "lium/b300-sxm6-pc",
+      "label": "Lium B300 SXM6 PC (Bittensor SN51)",
+      "machine_name": "NVIDIA B300 SXM6 PC"
+    },
+    {
+      "id": "lium/b300-sxm6-ac",
+      "label": "Lium B300 SXM6 AC (Bittensor SN51)",
+      "machine_name": "NVIDIA B300 SXM6 AC"
+    }
+  ]
+}

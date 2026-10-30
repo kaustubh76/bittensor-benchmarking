@@ -1,0 +1,34 @@
+{
+  "schema": "acr.basket/1",
+  "version": 1,
+  "index_id": "ACR-INF",
+  "unit": "$/1k tokens",
+  "note": "ACR-INF estimates the constant-quality price of a MID-class seller at 250ms (acr_estimator/hedonic.py REF_MODEL_CLASS, REF_LATENCY_MS). A median over a whole catalogue is not that: it runs down to $1.7e-08/token on open-weights models, which the hedonic stage would adjust away rather than average in. So the basket is a named mid-tier selection, and the fetch supplies prices for these rows only.",
+  "source": {
+    "kind": "http",
+    "url": "https://openrouter.ai/api/v1/models",
+    "auth": "none",
+    "price_field": "pricing.prompt and pricing.completion, USD per token, as strings"
+  },
+  "rule": {
+    "aggregate": "median",
+    "trim": 0.0,
+    "min_priced": 5,
+    "min_priced_note": "How many rows must actually carry a price. A ratchet, like the anchor's own `ceiling`: the basket has thinned before, ACR-INF going from 6 to 5 priced of 10 requested with no signal anywhere, and `par.Basket.usable` sends a stranger's bill to the FLEET scale once a basket stops being usable \u2014 a scale anchors/GAP.md puts 10x to 1250x off market. Lower it deliberately in a commit, or fix the fetch.",
+    "blend": { "prompt": 0.75, "completion": 0.25 },
+    "unit_conversion": "usd_per_token * 1000",
+    "blend_note": "A 75/25 prompt:completion blend approximates a read-heavy agent workload. Stated because the aggregate is a function of this choice: the same catalogue gives a ~1000x gap prompt-only and ~588x blended."
+  },
+  "rows": [
+    { "id": "openai/gpt-4o-mini", "label": "GPT-4o mini", "model_class": "mid" },
+    { "id": "openai/gpt-4.1-mini", "label": "GPT-4.1 mini", "model_class": "mid" },
+    { "id": "anthropic/claude-3-haiku", "label": "Claude 3 Haiku", "model_class": "mid" },
+    { "id": "anthropic/claude-3.5-haiku", "label": "Claude 3.5 Haiku", "model_class": "mid" },
+    { "id": "google/gemini-flash-1.5", "label": "Gemini 1.5 Flash", "model_class": "mid" },
+    { "id": "google/gemini-2.0-flash-001", "label": "Gemini 2.0 Flash", "model_class": "mid" },
+    { "id": "mistralai/mistral-small", "label": "Mistral Small", "model_class": "mid" },
+    { "id": "meta-llama/llama-3.1-70b-instruct", "label": "Llama 3.1 70B", "model_class": "mid" },
+    { "id": "deepseek/deepseek-chat", "label": "DeepSeek Chat", "model_class": "mid" },
+    { "id": "qwen/qwen-2.5-72b-instruct", "label": "Qwen 2.5 72B", "model_class": "mid" }
+  ]
+}

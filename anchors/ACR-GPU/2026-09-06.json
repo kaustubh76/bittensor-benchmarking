@@ -1,0 +1,98 @@
+{
+  "aggregate": {
+    "max": 0.0011083333333333333,
+    "min": 0.00033055555555555556,
+    "n": 4,
+    "n_requested": 4,
+    "p25": 0.0005527777777777778,
+    "p75": 0.0011083333333333333,
+    "spread_ratio": 3.3529411764705883,
+    "value": 0.0005527777777777778
+  },
+  "basket_version": 1,
+  "ceiling": {
+    "note": "measured value plus 15%",
+    "ratio": 22.9,
+    "set_at": "2026-09-06"
+  },
+  "fetched_at": "2026-09-06T11:31:58+00:00",
+  "gap": {
+    "direction": "reference_above_market",
+    "ratio": 19.899497487437184
+  },
+  "index_id": "ACR-GPU",
+  "missing": [],
+  "provenance": {},
+  "reference_level": 0.011,
+  "rows": [
+    {
+      "id": "runpod/h100-pcie",
+      "label": "RunPod H100 PCIe (community)",
+      "price_usd_per_unit": 0.0005527777777777778,
+      "quality": {},
+      "raw": {
+        "usd_per_gpu_hour": 1.99
+      },
+      "source": {
+        "kind": "curated",
+        "quoted": "H100 PCIe $1.99/hr",
+        "retrieved_at": "2026-09-06T11:31:58+00:00",
+        "url": "https://www.runpod.io/pricing"
+      }
+    },
+    {
+      "id": "lambda/h100-sxm",
+      "label": "Lambda H100 SXM on-demand",
+      "price_usd_per_unit": 0.0011083333333333333,
+      "quality": {},
+      "raw": {
+        "usd_per_gpu_hour": 3.99
+      },
+      "source": {
+        "kind": "curated",
+        "quoted": "H100 SXM $3.99/GPU-hour",
+        "retrieved_at": "2026-09-06T11:31:58+00:00",
+        "url": "https://lambda.ai/service/gpu-cloud"
+      }
+    },
+    {
+      "id": "runpod/a100-pcie",
+      "label": "RunPod A100 PCIe",
+      "price_usd_per_unit": 0.00033055555555555556,
+      "quality": {},
+      "raw": {
+        "usd_per_gpu_hour": 1.19
+      },
+      "source": {
+        "kind": "curated",
+        "quoted": "A100 PCIe $1.19/hr",
+        "retrieved_at": "2026-09-06T11:31:58+00:00",
+        "url": "https://www.runpod.io/pricing"
+      }
+    },
+    {
+      "id": "lambda/a100-40gb",
+      "label": "Lambda A100 40GB on-demand",
+      "price_usd_per_unit": 0.0005527777777777778,
+      "quality": {},
+      "raw": {
+        "usd_per_gpu_hour": 1.99
+      },
+      "source": {
+        "kind": "curated",
+        "quoted": "A100 40GB $1.99/hr",
+        "retrieved_at": "2026-09-06T11:31:58+00:00",
+        "url": "https://lambda.ai/service/gpu-cloud"
+      }
+    }
+  ],
+  "schema": "acr.anchor/1",
+  "selection": {
+    "aggregate": "median",
+    "note": "Median across providers for a comparable accelerator tier.",
+    "trim": 0.0,
+    "unit_conversion": "usd_per_gpu_hour / 3600"
+  },
+  "tool_version": 1,
+  "unit": "$/GPU-sec"
+}

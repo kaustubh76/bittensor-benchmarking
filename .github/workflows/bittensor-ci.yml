@@ -1,0 +1,110 @@
+name: bittensor-ci
+
+# CI for the SN51/SN64 submission repo (`kaustubh76/bittensor-benchmarking`),
+# which carries the Bittensor subset of this project: `packages/`, `services/`,
+# `scripts/`, `tests/`, `anchors/` and `docs/`.
+#
+# WHY A SECOND CI FILE. `ci.yml` has six jobs, and three of them build things
+# the subset deliberately leaves out — Foundry contracts, the Next.js terminal,
+# the subgraph — while its Python job asserts that the on-chain suites did not
+# SKIP, which needs anvil and compiled contract artifacts. Pushing it to a repo
+# without those trees would produce a permanently red badge, and a red badge
+# nobody can fix is worse than no badge: it teaches a reader to ignore the one
+# signal that is supposed to mean something.
+#
+# So this runs exactly the gates the subset can actually pass, and the guard
+# below keeps it inert in the full product repo, where `ci.yml` is the real one.
+#
+# The division of labour with bittensor-refresh.yml: that file CAPTURES (network,
+# scheduled, commits what moved); this one VERIFIES (offline, deterministic, on
+# every push). Everything here reads committed files, which is the serving
+# design on purpose — determinism and offline CI are the whole reason the
+# fixtures exist.
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    if: github.repository == 'kaustubh76/bittensor-benchmarking'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.11"
+          enable-cache: true
+      - name: Sync workspace
+        run: uv sync --all-packages
+
+      - name: Lint
+        run: uv run ruff check packages services scripts redteam
+
+      - name: Tests
+        run: uv run pytest packages services tests -q -p no:cacheprovider --import-mode=importlib
+
+      # The failure mode that matters for THIS integration. Every SN51/SN64
+      # assertion reads a COMMITTED fixture behind a module-level
+      # `skipif(not FIXTURE.exists())`, so deleting or renaming one turns the
+      # whole Bittensor path green by silence — which is exactly how a broken
+      # SN64 serving path once shipped. The fixtures are committed, so a skip
+      # here means a broken checkout, not an absent optional dependency.
+      #
+      # Pass/fail is pytest's EXIT CODE; the skip count is what this grep is
+      # for. `-q` suppresses the summary line, so never parse prose for a thing
+      # the tool already returns.
+      - name: The Bittensor tests actually ran
+        run: |
+          set -o pipefail
+          uv run pytest tests/test_lium_anchor.py \
+            tests/test_bt_tape_archive.py \
+            tests/test_lium_fetch.py \
+            tests/test_bt_canary.py \
+            packages/acr_tape/tests/test_chutes_source.py \
+            packages/acr_tape/tests/test_chutes_source_hardening.py \
+            packages/acr_tape/tests/test_chutes_metagraph.py \
+            packages/acr_tape/tests/test_taostats.py \
+            packages/acr_subnet/tests/test_denomination.py \
+            services/index_api/tests/test_store_source_contract.py \
+            -p no:cacheprovider --import-mode=importlib -rs 2>&1 | tee /tmp/bittensor.txt
+          if grep -qE "skipped" /tmp/bittensor.txt; then
+            echo "::error::a Bittensor test SKIPPED — a committed fixture is missing or moved"
+            exit 1
+          fi
+
+      # The subnet's only real question: does it pay the right miner?
+      - name: Subnet gate
+        run: uv run pytest packages/acr_subnet packages/acr_tape -q -p no:cacheprovider --import-mode=importlib
+
+      # Offline. Asserts the anchor gap is DECLARED and reproducible, never that
+      # it is small — a test red at 1250x is red forever and teaches its reader
+      # to ignore it. Size is held by a per-file ratchet, coverage by
+      # `rule.min_priced`, and thin accelerator classes by `rule.lium_max_thin`.
+      - name: Anchor gap declared, basket fresh, classes not thin
+        run: uv run python scripts/anchors.py --check
+
+      # The estimator's exact output, pinned. A deliberate change re-blesses
+      # with `make golden` in the same commit; an accidental one stops here.
+      - name: Golden estimator output
+        run: uv run python scripts/gen_golden.py --check
+
+  # Separate job, and allowed to fail: CI cannot otherwise notice a field
+  # rename, an added auth requirement, or an endpoint disappearing, because
+  # every gate above reads a committed file. An outage at a third party is not
+  # a reason to go red on a pull request — it is a reason for somebody to know.
+  canary:
+    if: github.repository == 'kaustubh76/bittensor-benchmarking'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.11"
+          enable-cache: true
+      - name: Do the Bittensor upstreams still look like what we parse?
+        run: uv run python scripts/bt_canary.py

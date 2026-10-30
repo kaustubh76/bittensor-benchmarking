@@ -1,0 +1,17 @@
+[project]
+name = "acr-core"
+version = "0.1.0"
+description = "ACR shared types, index registry, config, and math primitives"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.7",
+    "pydantic-settings>=2.3",
+    "numpy>=1.26",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["acr_core"]

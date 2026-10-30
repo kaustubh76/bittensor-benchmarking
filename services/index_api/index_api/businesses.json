@@ -1,0 +1,73 @@
+{
+  "_comment": [
+    "The business registry. Onboarding is a commit: see businesses.py for why.",
+    "A business IS its treasury address. `consented` gates the NAME only; an",
+    "unconsented business still counts and still gets a published ledger, under",
+    "the pseudonym `business <slug>`.",
+    "`policy_wallet` empty means the operator can price and meter for them but",
+    "cannot spend — which is what an evaluation looks like, and a real state.",
+    "`chain` is per business because mainnet and testnet totals are reported",
+    "separately and must never be added together.",
+    "`sandbox: true` is a DEMONSTRATION, not a customer. It renders wherever a business renders — the escalation queue and the decision table cannot be shown at all without one — and `businesses.real()` excludes it from every traction figure. Its decisions live in operator_decisions.sandbox.jsonl so that anyone auditing what the agent really did reads only real rows."
+  ],
+  "businesses": [
+    {
+      "slug": "acr-fleet",
+      "name": "ACR buyer-agent fleet",
+      "treasury": "0x674055533b05ec3fd135fc21c4d91a4a2d3193d3",
+      "policy_wallet": "0xA755f87BD00c90DBFc9DdfD6651e4c3071665b32",
+      "consented": true,
+      "tier": "own",
+      "chain": "testnet",
+      "categories": [
+        "machine-services"
+      ],
+      "onboarded_at": 1790946149,
+      "note": "75 real exact-scheme Gateway settlements across 7 sellers and 4 units (0.325467 USDC) on 2026-09-12/13, which predate the Tameion window: they are what the meter counts, not what the operator did. The operator's own work is the decision log. PolicyWallet 0xA755f87BD00c90DBFc9DdfD6651e4c3071665b32 on Arc testnet holds its USDC under a 1 USDC cap and a 0.05 per-payment limit, so `spends` is true and `moved_usdc` is money that really left."
+    },
+    {
+      "slug": "sandbox",
+      "name": "Sandbox Studio",
+      "treasury": "0x5C7a91Fb3E068d24A1c9B7e05F32d684Ca07B19E",
+      "policy_wallet": "",
+      "consented": true,
+      "tier": "own",
+      "chain": "testnet",
+      "categories": [
+        "infra",
+        "contractors"
+      ],
+      "onboarded_at": 1790866800,
+      "sandbox": true,
+      "note": "A demonstration so the escalation queue, the meter, the counterparty screen and the dry-run labelling can all be seen working. Invented bills decided by the real ladder (scripts/gen_sandbox_decisions.py, checked in CI), not a real business, excluded from every traction number. No PolicyWallet on purpose: inventing contract state would make the page's own sentence about reading budgets from the contract false, and `spends: false` is both true here and the state the real business is in until a wallet is funded."
+    },
+    {
+      "slug": "acr-operator",
+      "name": "ACR operator wallet",
+      "treasury": "0x784e6D2d4870174aD1aEa3d7446F2377D0c6A05d",
+      "policy_wallet": "0xa67F188746f479A9d93D112BeeB7aadB90bE834b",
+      "consented": true,
+      "tier": "own",
+      "chain": "testnet",
+      "categories": [
+        "machine-services"
+      ],
+      "onboarded_at": 1791802047,
+      "note": "ACR's own operating wallet, tier `own` — this is us, not a customer, and `by_tier` says so. It exists because the first testnet PolicyWallet (0xA755f87B…) has an owner() whose key is held by nobody, which makes every onlyOwner path there — setAgent, setBudget, withdraw, spendAsOwner and spendApproved — unreachable forever. acr-fleet keeps that wallet and its history; this one carries the working escalation ladder. Deployed 2026-10-12 with the owner key in hand and the agent authorised at deploy time, so owner ≠ agent and an approval cannot authorise itself."
+    },
+    {
+      "slug": "acr-mainnet",
+      "name": "ACR on Arc mainnet",
+      "treasury": "0xE804f54109b627205B31149965e534837D046dAd",
+      "policy_wallet": "0x3a5F444B0e4Ddc7FA6dcddA07A71d0710eea4e04",
+      "consented": true,
+      "tier": "own",
+      "chain": "mainnet",
+      "categories": [
+        "machine-services"
+      ],
+      "onboarded_at": 1792144327,
+      "note": "ACR's first mainnet business, owner-approved 2026-10-16. Treasury 0xE804… is the owner's own wallet and has never paid on testnet, so no testnet receipt can be mistaken for its bill. PolicyWallet 0x3a5F444B0e4Ddc7FA6dcddA07A71d0710eea4e04 on Arc mainnet (block 26243704) carries the replay-protected bytecode, a 1.00 USDC/day cap with bills under 0.10, and the press EOA 0x1547… as its agent. Its owner becomes 0xE804… once that wallet calls acceptOwnership(). It holds no USDC yet, and live spending stays off until a legitimate mainnet payee exists: the operator escalates rather than paying the agent itself or a demo seller."
+    }
+  ]
+}
