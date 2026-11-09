@@ -1,0 +1,85 @@
+{
+  "aggregate": {
+    "max": 0.00011999999999999999,
+    "min": 8.7e-05,
+    "n": 3,
+    "n_requested": 3,
+    "p25": 8.7e-05,
+    "p75": 0.00011999999999999999,
+    "spread_ratio": 1.379310344827586,
+    "value": 8.999999999999999e-05
+  },
+  "basket_version": 1,
+  "ceiling": {
+    "note": "measured value plus 15%",
+    "ratio": 25.6,
+    "set_at": "2026-11-09"
+  },
+  "fetched_at": "2026-11-09T14:17:47+00:00",
+  "gap": {
+    "direction": "reference_above_market",
+    "ratio": 22.222222222222225
+  },
+  "index_id": "ACR-DATA",
+  "missing": [],
+  "provenance": {},
+  "reference_level": 0.002,
+  "rows": [
+    {
+      "id": "aws/egress-first-tier",
+      "label": "AWS data transfer out, first 10TB",
+      "price_usd_per_unit": 8.999999999999999e-05,
+      "quality": {},
+      "raw": {
+        "usd_per_gb": 0.09
+      },
+      "source": {
+        "kind": "curated",
+        "quoted": "$0.09/GB, us-east-1, first 10 TB/month",
+        "retrieved_at": "2026-11-09T14:17:47+00:00",
+        "url": "https://aws.amazon.com/ec2/pricing/on-demand/"
+      }
+    },
+    {
+      "id": "gcp/egress-first-tier",
+      "label": "Google Cloud internet egress",
+      "price_usd_per_unit": 0.00011999999999999999,
+      "quality": {},
+      "raw": {
+        "usd_per_gb": 0.12
+      },
+      "source": {
+        "kind": "curated",
+        "quoted": "$0.12/GB, worldwide excl. China/Australia, first TB",
+        "retrieved_at": "2026-11-09T14:17:47+00:00",
+        "url": "https://cloud.google.com/vpc/network-pricing"
+      }
+    },
+    {
+      "id": "azure/egress-first-tier",
+      "label": "Azure bandwidth outbound",
+      "price_usd_per_unit": 8.7e-05,
+      "quality": {},
+      "raw": {
+        "usd_per_gb": 0.087
+      },
+      "source": {
+        "kind": "curated",
+        "quoted": "$0.087/GB, first 10 TB/month",
+        "retrieved_at": "2026-11-09T14:17:47+00:00",
+        "url": "https://azure.microsoft.com/en-us/pricing/details/bandwidth/"
+      }
+    }
+  ],
+  "schema": "acr.anchor/1",
+  "selection": {
+    "aggregate": "median",
+    "min_priced": 3,
+    "min_priced_note": "How many rows must actually carry a price. A ratchet, like the anchor's own `ceiling`: the basket has thinned before, ACR-INF going from 6 to 5 priced of 10 requested with no signal anywhere, and `par.Basket.usable` sends a stranger's bill to the FLEET scale once a basket stops being usable \u2014 a scale anchors/GAP.md puts 10x to 1250x off market. Lower it deliberately in a commit, or fix the fetch.",
+    "note": "Decimal GB, as sold and as billed.",
+    "trim": 0.0,
+    "unit_conversion": "usd_per_gb / 1000"
+  },
+  "tool_version": 2,
+  "unit": "$/MB"
+}
