@@ -18,9 +18,9 @@ scale-invariant — measured, by re-anchoring ACR-INF 667x and watching
 
 | index | reference | market anchor | gap | rows | spread | as of |
 |---|---|---|---|---|---|---|
-| `ACR-INF` | 0.5 $/1k tokens | 0.0004625 | **1081x** | 5/10 | 2.7x | 2026-11-13 |
-| `ACR-GPU` | 0.011 $/GPU-sec | 0.00109861 | **10x** | 10/10 | 10.0x | 2026-11-13 |
-| `ACR-DATA` | 0.002 $/MB | 9e-05 | **22x** | 3/3 | 1.4x | 2026-11-13 |
+| `ACR-INF` | 0.5 $/1k tokens | 0.000450225 | **1111x** | 5/10 | 2.7x | 2026-11-14 |
+| `ACR-GPU` | 0.011 $/GPU-sec | 0.00106111 | **10x** | 10/10 | 10.6x | 2026-11-14 |
+| `ACR-DATA` | 0.002 $/MB | 9e-05 | **22x** | 3/3 | 1.4x | 2026-11-14 |
 
 ## Why the gap is not one number
 
@@ -41,7 +41,7 @@ ACR-INF estimates the constant-quality price of a MID-class seller at 250ms (acr
 | GPT-4o mini | 0.0002625 | [data[id=openai/gpt-4o-mini].pricing](https://openrouter.ai/api/v1/models) |
 | GPT-4.1 mini | 0.0007 | [data[id=openai/gpt-4.1-mini].pricing](https://openrouter.ai/api/v1/models) |
 | Llama 3.1 70B | 0.00072 | [data[id=meta-llama/llama-3.1-70b-instruct].pricing](https://openrouter.ai/api/v1/models) |
-| DeepSeek Chat | 0.0004625 | [data[id=deepseek/deepseek-chat].pricing](https://openrouter.ai/api/v1/models) |
+| DeepSeek Chat | 0.000450225 | [data[id=deepseek/deepseek-chat].pricing](https://openrouter.ai/api/v1/models) |
 | Qwen 2.5 72B | 0.00037 | [data[id=qwen/qwen-2.5-72b-instruct].pricing](https://openrouter.ai/api/v1/models) |
 
 Requested but absent on this date: `anthropic/claude-3-haiku`, `anthropic/claude-3.5-haiku`, `google/gemini-flash-1.5`, `google/gemini-2.0-flash-001`, `mistralai/mistral-small`. A basket that shrinks silently re-medians a different population.
@@ -58,10 +58,10 @@ Published on-demand rate cards, plus live prices from Bittensor subnet 51 (Lium)
 | Lambda A100 40GB on-demand | 0.000552778 | [A100 40GB $1.99/hr](https://lambda.ai/service/gpu-cloud) |
 | Lium H100 80GB HBM3 (Bittensor SN51) | 0.000805556 | [[machine_name=NVIDIA H100 80GB HBM3].price_per_gpu (median)](https://lium.io/api/executors) |
 | Lium H200 (Bittensor SN51) | 0.00116667 | [[machine_name=NVIDIA H200].price_per_gpu (median)](https://lium.io/api/executors) |
-| Lium H200 NVL (Bittensor SN51) | 0.00108889 | [[machine_name=NVIDIA H200 NVL].price_per_gpu (median)](https://lium.io/api/executors) |
-| Lium B200 (Bittensor SN51) | 0.00220694 | [[machine_name=NVIDIA B200].price_per_gpu (median)](https://lium.io/api/executors) |
-| Lium B300 SXM6 PC (Bittensor SN51) | 0.00330556 | [[machine_name=NVIDIA B300 SXM6 PC].price_per_gpu (median)](https://lium.io/api/executors) |
-| Lium B300 SXM6 AC (Bittensor SN51) | 0.00330556 | [[machine_name=NVIDIA B300 SXM6 AC].price_per_gpu (median)](https://lium.io/api/executors) |
+| Lium H200 NVL (Bittensor SN51) | 0.00101389 | [[machine_name=NVIDIA H200 NVL].price_per_gpu (median)](https://lium.io/api/executors) |
+| Lium B200 (Bittensor SN51) | 0.00213056 | [[machine_name=NVIDIA B200].price_per_gpu (median)](https://lium.io/api/executors) |
+| Lium B300 SXM6 PC (Bittensor SN51) | 0.0034125 | [[machine_name=NVIDIA B300 SXM6 PC].price_per_gpu (median)](https://lium.io/api/executors) |
+| Lium B300 SXM6 AC (Bittensor SN51) | 0.00351944 | [[machine_name=NVIDIA B300 SXM6 AC].price_per_gpu (median)](https://lium.io/api/executors) |
 
 ### ACR-DATA — $/MB
 
