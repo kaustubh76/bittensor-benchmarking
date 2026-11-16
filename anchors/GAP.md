@@ -18,9 +18,9 @@ scale-invariant — measured, by re-anchoring ACR-INF 667x and watching
 
 | index | reference | market anchor | gap | rows | spread | as of |
 |---|---|---|---|---|---|---|
-| `ACR-INF` | 0.5 $/1k tokens | 0.000450225 | **1111x** | 5/10 | 2.7x | 2026-11-15 |
-| `ACR-GPU` | 0.011 $/GPU-sec | 0.00108472 | **10x** | 10/10 | 10.6x | 2026-11-15 |
-| `ACR-DATA` | 0.002 $/MB | 9e-05 | **22x** | 3/3 | 1.4x | 2026-11-15 |
+| `ACR-INF` | 0.5 $/1k tokens | 0.000450225 | **1111x** | 5/10 | 2.7x | 2026-11-16 |
+| `ACR-GPU` | 0.011 $/GPU-sec | 0.00118056 | **9x** | 10/10 | 10.3x | 2026-11-16 |
+| `ACR-DATA` | 0.002 $/MB | 9e-05 | **22x** | 3/3 | 1.4x | 2026-11-16 |
 
 ## Why the gap is not one number
 
@@ -56,12 +56,12 @@ Published on-demand rate cards, plus live prices from Bittensor subnet 51 (Lium)
 | Lambda H100 SXM on-demand | 0.00110833 | [H100 SXM $3.99/GPU-hour](https://lambda.ai/service/gpu-cloud) |
 | RunPod A100 PCIe | 0.000330556 | [A100 PCIe $1.19/hr](https://www.runpod.io/pricing) |
 | Lambda A100 40GB on-demand | 0.000552778 | [A100 40GB $1.99/hr](https://lambda.ai/service/gpu-cloud) |
-| Lium H100 80GB HBM3 (Bittensor SN51) | 0.000805556 | [[machine_name=NVIDIA H100 80GB HBM3].price_per_gpu (median)](https://lium.io/api/executors) |
+| Lium H100 80GB HBM3 (Bittensor SN51) | 0.00138889 | [[machine_name=NVIDIA H100 80GB HBM3].price_per_gpu (median)](https://lium.io/api/executors) |
 | Lium H200 (Bittensor SN51) | 0.00116667 | [[machine_name=NVIDIA H200].price_per_gpu (median)](https://lium.io/api/executors) |
-| Lium H200 NVL (Bittensor SN51) | 0.00106111 | [[machine_name=NVIDIA H200 NVL].price_per_gpu (median)](https://lium.io/api/executors) |
-| Lium B200 (Bittensor SN51) | 0.00246944 | [[machine_name=NVIDIA B200].price_per_gpu (median)](https://lium.io/api/executors) |
-| Lium B300 SXM6 PC (Bittensor SN51) | 0.00330556 | [[machine_name=NVIDIA B300 SXM6 PC].price_per_gpu (median)](https://lium.io/api/executors) |
-| Lium B300 SXM6 AC (Bittensor SN51) | 0.00351944 | [[machine_name=NVIDIA B300 SXM6 AC].price_per_gpu (median)](https://lium.io/api/executors) |
+| Lium H200 NVL (Bittensor SN51) | 0.00119444 | [[machine_name=NVIDIA H200 NVL].price_per_gpu (median)](https://lium.io/api/executors) |
+| Lium B200 (Bittensor SN51) | 0.00194444 | [[machine_name=NVIDIA B200].price_per_gpu (median)](https://lium.io/api/executors) |
+| Lium B300 SXM6 PC (Bittensor SN51) | 0.00341111 | [[machine_name=NVIDIA B300 SXM6 PC].price_per_gpu (median)](https://lium.io/api/executors) |
+| Lium B300 SXM6 AC (Bittensor SN51) | 0.00330556 | [[machine_name=NVIDIA B300 SXM6 AC].price_per_gpu (median)](https://lium.io/api/executors) |
 
 ### ACR-DATA — $/MB
 
